@@ -1,0 +1,44 @@
+.statut_decision {
+	border-radius: 10px; 
+	border-radius: 20px;
+	height: 28px;
+	text-align: center;
+	width: 12%;
+	margin-left: 15px;
+}
+
+input[name="id_problem"] {
+	border-radius: 20px;
+	height: 28px;
+	width: 12%;
+	margin: 0;
+	margin-left: 15px;
+	text-align: center;
+	float: none;
+}
+
+form {
+	margin-bottom: 20px;
+	height: 40px;
+	margin: 0 auto 20px auto;
+}
+
+
+#apply {
+    color: #fff;
+    font-size: 15px;
+    width: 12%;
+    height: 28px;
+	padding-bottom: 4px;
+    background-color: #de0f0f;
+    border-style: none;
+    border-radius: 20px;
+    margin-left: 15px;
+  	margin-top: 0;
+  	float: none;
+}
+
+#apply:hover {
+	background-color: #000;
+}
+

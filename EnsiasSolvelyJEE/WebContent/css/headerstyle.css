@@ -1,0 +1,127 @@
+.navbar {
+	margin-top: 0;
+    width: 100%;
+}
+
+.navbar-nav a,.navbar-brand{
+	margin-left:0px;
+	margin-right:0px;
+}
+
+#navbarNavAltMarkup {
+	background-color: #de0f0f;
+}
+
+.bg-light {
+    background-color: #de0f0f !important;
+}
+
+.nav-item {
+	font-weight: bold;
+	color: white !important;
+	font-size: 14px
+}
+
+.nav-item:hover {
+	background-color: #eaecee;
+	border-radius: 15px;
+	color: black !important;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+/* The Modal (background) */
+.modal {
+    display:none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+/* Modal Content Box */
+.modal-content {
+    background-color: white;
+    margin: 15% auto 15% auto;
+    width: 40%; 
+    padding-bottom: 30px;
+    border-radius: 15px;
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+.close:hover,.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+
+/* Add Zoom Animation */
+.animate {
+    animation: zoom 0.6s
+}
+@keyframes zoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+ 
+
+.container input[name="uname"], .container input[name="passwd"] {
+    padding: 5px;
+    font-size: 20px;
+    margin: 10px auto;
+    border: 2px solid #ddd;
+    border-radius: 20px;
+    width: 70%;
+    outline: none;
+}
+
+.container input[name="uname"]:focus, .container input[name="passwd"]:focus {
+    border: 2px solid #000;
+    border-radius: 20px;
+}
+
+.container input[name="uname"]:hover, .container input[name="passwd"]:hover {
+    border: 2px solid #02b8dd;
+}
+
+#button-login {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 11px;
+    width: 120px;
+    height: 40px;
+    line-height: 5px;
+    background-color: #de0f0f;
+    border-style: none;
+    border-radius: 20px;
+    margin: 10px auto 0 auto;
+}
+
+#button-login:hover {
+    background-color: #000;
+}
+
+.container {
+	display: contents !important;
+}
+
+h2 {
+	text-transform: uppercase;
+	font-size: 30px;
+}

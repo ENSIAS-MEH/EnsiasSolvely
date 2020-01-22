@@ -1,0 +1,21 @@
+form {
+	margin-left: 40px;
+	margin-top: 40px;
+}
+
+h3 {
+	margin-top: 40px;
+	margin-left: 40px;
+}
+
+form div {
+	margin-top: 20px;
+}
+
+input[type="text"] {
+	width: 30%;
+}
+
+#message {
+	height: 300px;
+}

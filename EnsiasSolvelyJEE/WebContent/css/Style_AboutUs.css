@@ -1,0 +1,152 @@
+/* GENERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+
+h1 {
+    font-family: "Crete Round", Brothers, serif;
+    font-size: 40px;
+    color: #444;
+}
+
+h2 {
+    color: #444;
+    font-size: 55px;
+}
+
+h3 {
+    font-size: 30px;
+    color: #444;
+}
+
+h4 {
+    font-size: 24px;
+    color: #444;
+}
+
+p {
+    line-height: 20px;
+    color: #777;
+    font-size: 16px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.wrapper {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+
+.clear {
+    clear: both;
+}
+
+
+/* MAIN IMAGE */
+
+#main-image {
+    height: 580px;
+    background: url("../images/Main_1.jpg") no-repeat center;
+}
+
+#main-image h2 {
+    font-weight: normal;
+    font-weight: bold;
+    width: 400px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 90px 0 20px 0;
+    color: #000;
+    font-size: 35px;
+    margin: 0 auto 20px auto;
+    border-bottom: 1px solid #DE0F0F
+}
+
+#main-image p {
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 35px;
+    width: 850px;
+    color: rgb(37, 37, 37);
+}
+
+
+/* CONTACT */
+
+#contact {
+    padding: 50px 0;
+    text-align: center;
+}
+
+#contact h3 {
+    width: 400px;
+    text-transform: uppercase;
+    margin: 0 auto 20px auto;
+    border-bottom: 1px solid #DE0F0F;
+    padding-bottom: 20px;
+}
+
+form {
+    margin: 60px auto 20px auto;
+}
+
+label {
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 10px;
+    color: #777;
+}
+
+input[type="text"] {
+    padding: 5px;
+    font-size: 20px;
+    margin-right: 20px;
+    border: 2px solid #ddd;
+    border-radius: 20px;
+    width: 300px;
+    outline: none;
+}
+
+input[type="text"]:focus{
+    border: 2px solid #000;
+    border-radius: 20px;
+}
+
+input[type="text"]:hover {
+    border: 2px solid #02b8dd;
+}
+
+.button-3 {
+    color: #fff;
+    font-size: 20px;
+    padding: 11px;
+    width: 120px !important;
+    height: 40px;
+    line-height: 5px;
+    background-color: #de0f0f;
+    border-style: none;
+    border-radius: 20px;
+    margin: 30px auto 20px auto !important;
+}
+
+.button-3:hover {
+    background-color: #000;
+}

@@ -1,123 +1,89 @@
-package com.EnsiasSolvely.formulaires;
+package com.EnsiasSolvely.BeanForm;
 
-import java.sql.Date;
+import java.util.Date;
 
 public class ProblemsBEAN {
 	
 	private int id_probleme;
 	private String lieu;
 	private String description;
-	private Date date_demande;
-	private String Statut;
-	private String lastname;
-	private String firstname; 
-	private int id_type;
-	//private String libelle_type;
-	private String date;
-
+	private Date date_demande;	
+	private String statut;
+	private String nom;
+	private String prenom;
+	private String nom_comite;
+	private String libelle_type;
 	
 	
 	
-	
-
-
-	public ProblemsBEAN(int id_probleme, String lieu, String description, Date date_demande, String statut,
-			String lastname, String firstname, int id_type) {
+	public ProblemsBEAN(int id_probleme, String lieu, String description, Date date_demande, String statut, String nom,
+			String prenom, String nom_comite, String libelle_type) {
 		super();
 		this.id_probleme = id_probleme;
 		this.lieu = lieu;
 		this.description = description;
 		this.date_demande = date_demande;
-		Statut = statut;
-		this.lastname = lastname;
-		this.firstname = firstname;
-		this.id_type = id_type;
+		this.statut = statut;
+		this.nom = nom;
+		this.prenom = prenom;
+		this.nom_comite = nom_comite;
+		this.libelle_type = libelle_type;
 	}
-
-
-
-	public int getId_type() {
-		return id_type;
-	}
-
-
-
-	public void setId_type(int id_type) {
-		this.id_type = id_type;
-	}
-
-
-
-	public ProblemsBEAN() {
-		super();
-	}
-	
-
-
-	public String getLastname() {
-		return lastname;
-	}
-	
-	public void setLastname(String lastname) {
-		this.lastname = lastname;
-	}
-	
-	public String getFirstname() {
-		return firstname;
-	}
-	
-	public void setFirstname(String firstname) {
-		this.firstname = firstname;
-	}
-	
 	public int getId_probleme() {
 		return id_probleme;
 	}
-	
 	public void setId_probleme(int id_probleme) {
 		this.id_probleme = id_probleme;
 	}
-
 	public String getLieu() {
 		return lieu;
 	}
-
 	public void setLieu(String lieu) {
 		this.lieu = lieu;
 	}
-
 	public String getDescription() {
 		return description;
 	}
-
 	public void setDescription(String description) {
 		this.description = description;
 	}
-
 	public Date getDate_demande() {
 		return date_demande;
 	}
-
 	public void setDate_demande(Date date_demande) {
 		this.date_demande = date_demande;
 	}
-
 	public String getStatut() {
-		return Statut;
+		return statut;
 	}
-
 	public void setStatut(String statut) {
-		Statut = statut;
+		this.statut = statut;
+	}
+	public String getNom() {
+		return nom;
+	}
+	public void setNom(String nom) {
+		this.nom = nom;
+	}
+	public String getPrenom() {
+		return prenom;
+	}
+	public void setPrenom(String prenom) {
+		this.prenom = prenom;
+	}
+	public String getNom_comite() {
+		return nom_comite;
+	}
+	public void setNom_comite(String nom_comite) {
+		this.nom_comite = nom_comite;
+	}
+	public String getLibelle_type() {
+		return libelle_type;
+	}
+	public void setLibelle_type(String libelle_type) {
+		this.libelle_type = libelle_type;
 	}
 	
-
-	public String getDate() {
-		return date;
-	}
-
-
-	public void setDate(String date) {
-		this.date = date;
-	}
 	
+
 }

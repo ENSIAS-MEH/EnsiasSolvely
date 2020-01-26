@@ -21,7 +21,7 @@
 						<a class="nav-item nav-link active" href="Contact">Contact</a>
 						<a class="nav-item nav-link active" id="Login" href="#" onclick="document.getElementById('modal-wrapper').style.display='block'">Login</a>
 						<a class="nav-item nav-link active" id="Profile" href="Profile">Profile<span class="sr-only"></span></a>
-						<a class="nav-item nav-link active" id="Deconnection" href="Home?con=0" style="float:left;">Deconnection</a>
+						<a class="nav-item nav-link active" id="Deconnection" href="Home?con=0" style="float:left;">Logout</a>
 					</div>
 				</div>
 			</nav>

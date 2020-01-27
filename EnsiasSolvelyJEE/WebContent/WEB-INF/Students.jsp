@@ -60,6 +60,17 @@
 			</section>
 		</nav>
 		
-		<%@ include file="footer.jsp" %>
+        <%@ include file="footer.jsp" %>
+        
+        <script>
+			var count = document.getElementById("myTable").rows.length;
+			if(count > 4) document.getElementById('footer').style["margin-top"] = "0";
+			else if(count == 3) document.getElementById('footer').style["margin-top"] = "52px";
+			else if(count == 4) document.getElementById('footer').style["margin-top"] = "8px";
+			else if(count == 1) document.getElementById('footer').style["margin-top"] = "144px";
+			else if(count == 2) document.getElementById('footer').style["margin-top"] = "104px";
+			else document.getElementById('footer').style["margin-top"] = "90px";
+
+		</script>
 	</body>
 </html>

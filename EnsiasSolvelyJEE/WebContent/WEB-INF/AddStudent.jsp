@@ -53,6 +53,12 @@
 			</section>
 		</nav>
 		
-		<%@ include file="footer.jsp" %>
+        <%@ include file="footer.jsp" %>
+        <script type="text/javascript">
+			var erreur = "${form.erreurs['eleveExist']}";
+			if(erreur.length>0){
+				alert(erreur);	
+			}
+		</script>
 	</body>
 </html>

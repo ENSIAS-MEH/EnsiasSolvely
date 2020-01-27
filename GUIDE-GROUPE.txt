@@ -1,0 +1,36 @@
+
+
+*****************************GUIDE JEE **********************************
+
+Chaque membre fera une partie de l'application selon le plan suivant:
+
+1- Visualisation de la page attribué (maquette)
+
+2- Etablir le BEAN associé (ex: Eleve, Probleme...)
+    2-1- Etablir tous les attributs necessaires (ex: nom,prenom, CNE...)
+    2-2- Etablir les getters, les setters et le(s) constructeur(s) necessaire(s)
+    2-3- Respecter une règle de nommage ( les attributs tous en miniscule)
+
+3- Réaliser la Class DAO (ex: Eleve, Probleme, Comite...)
+    3-1- Une seule fonction de connexion 
+    3-2- plusieurs méthodes de récupération, insertion ou modification dans la base de données. (ex: public Eleve getEleve(int CNE){..."requette"...}, public Probleme[] getProblemeS(){...} ...)
+
+4- Etablir le Formulaire associé à la page (ex: Authentification, Probleme, Eleve...)
+    4-1- Methodes de vérification (optionnelle)
+    4-2- Methodes d'insertion, de modification, de retrait des données (appel au DAO)
+    4-3- Methodes d'erreurs (VOIR SUPPORT JOIN fonctions erreurs déjà prête (Projet Si))
+
+5- Etablir le NECESSAIRE dans la servlet associée
+
+NB: les BEAN, DAO et Formulaire doivent être nommé d'une façon simple et similaire. EXemple à prendre(respectivement) : EleveBEAN, EleveDAO et EleveForm 
+
+NB: les servlets doivent être nommées de la même manière que les pages JSP, pour garder la cohérence entre les deux.
+
+NB: le projet sera subdivisé en trois parties (PACKAGES) : 
+   1- Package numero 1 contient les BEAN, Formulaire.
+   2- Package numero 2 contient les DAO.
+   2- Package numero 3 contient les Servlets.
+
+
+**************************************TOUS PROBLEME RENCONTRE NOUS SOMME LA POUR LE DISCUTER ET LE RESOUDRE*************************
+

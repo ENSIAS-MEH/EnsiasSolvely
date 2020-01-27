@@ -85,7 +85,7 @@
 
   <jsp-config>
     <jsp-property-group>
-      <url-pattern>Problems.jsp</url-pattern>
+      <url-pattern>*.jsp</url-pattern>
       <include-prelude>/WEB-INF/taglibs.jsp</include-prelude>
     </jsp-property-group>
   </jsp-config>

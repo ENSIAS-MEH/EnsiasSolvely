@@ -8273,7 +8273,9 @@ supports ((position:-webkit-sticky ) or (position:sticky )){ .
 }
 
 .mr-auto, .mx-auto {
-	margin-right: auto !important
+	/*margin-right: auto !important*/
+	margin-right: 0;
+	width: 100%;
 }
 
 .mb-auto, .my-auto {

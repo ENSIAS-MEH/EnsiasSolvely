@@ -82,7 +82,7 @@ a {
 
 #main-image {
     height: 580px;
-    background: url("../images/Main_1.jpg") no-repeat center;
+    background: url("../images/bg03.jpg") no-repeat center;
 }
 
 #main-image h2 {
@@ -120,9 +120,13 @@ a {
 }
 
 .button-1:hover {
+	
     background: #000;
     text-decoration: none;
     color: white;
+    -webkit-transition: background 0.3s ease-in-out;
+  	-moz-transition: background 0.3s ease-in-out;
+  	transition: background-color 0.3s ease-in-out;
 }
 
 /* STEPS */
@@ -224,4 +228,7 @@ input[type="text"]:hover, input[type="password"]:hover {
 
 .button-3:hover {
     background-color: #000;
+    -webkit-transition: background 0.3s ease-in-out;
+  	-moz-transition: background 0.3s ease-in-out;
+  	transition: background-color 0.3s ease-in-out;
 }

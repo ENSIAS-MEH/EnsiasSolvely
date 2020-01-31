@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.10.0.final using JasperReports Library version 6.10.0-unknown  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="StatistiqueComite" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="243b3c86-19ce-4749-b365-fe1ca58847b0">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter (2)"/>
+	<queryString language="SQL">
+		<![CDATA[select * from  ensiassolvely.probleme , ensiassolvely.comite  where  ensiassolvely.comite.id_comite =  ensiassolvely.probleme.id_comite]]>
+	</queryString>
+	<field name="id_probleme" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="id_probleme"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="probleme"/>
+	</field>
+	<field name="date_demande" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.label" value="date_demande"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="probleme"/>
+	</field>
+	<field name="statut" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="statut"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="probleme"/>
+	</field>
+	<field name="nom_comite" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="nom_comite"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="comite"/>
+	</field>
+	<field name="id_comite" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="id_comite"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="probleme"/>
+	</field>
+	<group name="id_probleme">
+		<groupExpression><![CDATA[$F{id_probleme}]]></groupExpression>
+	</group>
+	<group name="date_demande">
+		<groupExpression><![CDATA[$F{date_demande}]]></groupExpression>
+	</group>
+	<group name="statut">
+		<groupExpression><![CDATA[$F{statut}]]></groupExpression>
+	</group>
+	<group name="nom_comite">
+		<groupExpression><![CDATA[$F{nom_comite}]]></groupExpression>
+	</group>
+	<group name="id_comite">
+		<groupExpression><![CDATA[$F{id_comite}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="131" splitType="Stretch">
+			<image>
+				<reportElement x="0" y="9" width="150" height="110" uuid="3957e191-d22f-4736-90d7-ea79bad10255"/>
+				<imageExpression><![CDATA["/WebContent/images/ensias.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="350" y="50" width="210" height="50" uuid="bb0b42ed-06ff-4622-a23c-7c019a128f58"/>
+				<textElement>
+					<font fontName="Microsoft JhengHei UI Light" size="31"/>
+				</textElement>
+				<text><![CDATA[Ensias Solvely]]></text>
+			</staticText>
+			<textField pattern="HH:mm">
+				<reportElement x="395" y="101" width="100" height="30" uuid="efb958af-5ff7-4f85-a1f7-108230bd9ae6"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="430" y="100" width="120" height="30" uuid="bb29ca11-8ef3-4cdc-88e1-3abc193d1d44"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<detail>
+		<band height="500" splitType="Stretch">
+			<stackedBar3DChart>
+				<chart evaluationTime="Report">
+					<reportElement x="52" y="113" width="440" height="380" uuid="b2f49b7c-6625-40e2-9cb9-ad7b18ae16f6"/>
+					<chartTitle/>
+					<chartSubtitle/>
+					<chartLegend/>
+				</chart>
+				<categoryDataset>
+					<categorySeries>
+						<seriesExpression><![CDATA[$F{id_probleme}]]></seriesExpression>
+						<categoryExpression><![CDATA[$F{nom_comite}]]></categoryExpression>
+						<valueExpression><![CDATA[$V{id_probleme_COUNT}]]></valueExpression>
+					</categorySeries>
+				</categoryDataset>
+				<bar3DPlot>
+					<plot/>
+					<itemLabel/>
+					<categoryAxisFormat>
+						<axisFormat labelColor="#000000" tickLabelColor="#000000" axisLineColor="#000000"/>
+					</categoryAxisFormat>
+					<valueAxisFormat>
+						<axisFormat labelColor="#000000" tickLabelColor="#000000" axisLineColor="#000000"/>
+					</valueAxisFormat>
+				</bar3DPlot>
+			</stackedBar3DChart>
+			<line>
+				<reportElement x="10" y="9" width="560" height="1" uuid="b3d772a5-c72a-412f-a01a-16dffc43f258"/>
+			</line>
+			<staticText>
+				<reportElement x="0" y="60" width="544" height="30" uuid="c58095d5-ca35-41b9-b697-3a9de857a356"/>
+				<textElement>
+					<font fontName="Microsoft JhengHei" size="19"/>
+				</textElement>
+				<text><![CDATA[Distrubtion des problèmes selon les comités ]]></text>
+			</staticText>
+		</band>
+	</detail>
+</jasperReport>

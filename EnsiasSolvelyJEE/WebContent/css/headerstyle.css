@@ -79,23 +79,23 @@
     to {transform: scale(1)}
 }
  
-
-.container input[name="uname"], .container input[name="passwd"] {
+ 
+.container input[type="text"], .container input[type="password"]{
     padding: 5px;
     font-size: 20px;
-    margin: 10px auto;
+    margin: 10px auto !important;
     border: 2px solid #ddd;
     border-radius: 20px;
-    width: 70%;
+    width: 80%;
     outline: none;
 }
 
-.container input[name="uname"]:focus, .container input[name="passwd"]:focus {
+.container input[type="text"]:focus, .container input[type="password"]:focus {
     border: 2px solid #000;
     border-radius: 20px;
 }
 
-.container input[name="uname"]:hover, .container input[name="passwd"]:hover {
+.container input[type="text"]:hover, .container input[type="password"]:hover {
     border: 2px solid #02b8dd;
 }
 
@@ -124,4 +124,39 @@
 h2 {
 	text-transform: uppercase;
 	font-size: 30px;
+}
+
+
+#Profile:hover {
+	background-color: #de0f0f !important;
+	color: black !important;
+}
+
+#imgLogout {
+	width: 100% !important;
+	margin-top: 7px !important;
+	margin-left: 15px !important;
+}
+
+
+#Deconnection {
+	width: 2% !important;
+}
+
+#Deconnection:hover {
+	width: 2.2% !important;
+	background: url(images/logout1.png) !important;
+}
+
+#imgLogout:hover {
+	margin-top: 6.8px !important;
+}
+
+#circle {
+	margin-left: 49% !important;
+	margin-top: 15px;
+    width: 10px;
+    height: 10px;
+    background: lightgreen;
+    border-radius: 50%
 }

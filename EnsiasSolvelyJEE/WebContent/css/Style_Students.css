@@ -17,6 +17,9 @@
 
 #addStudent:hover {
     background-color: #000;
+    -webkit-transition: background 0.3s ease-in-out;
+  	-moz-transition: background 0.3s ease-in-out;
+  	transition: background-color 0.3s ease-in-out;
 }
 
 h4 {
@@ -24,36 +27,45 @@ h4 {
 	margin: 30px auto 20px auto;
 }
 
-input[name="studentNumber"] {
-	border-radius: 20px;
-	height: 28px;
-	width: 12%;
-	margin: 0;
-	margin-left: 15px;
-	text-align: center;
-	float: none;
-}
 
-form {
+
+section form {
 	margin-bottom: 20px;
 	height: 40px;
+	width: 25%;
 	margin: 0 auto 20px auto;
+	padding: 0;
 }
+
 
 #search {
     color: #fff;
     font-size: 15px;
-    width: 12%;
+    width: 30%;
     height: 28px;
 	padding-bottom: 4px;
     background-color: #de0f0f;
     border-style: none;
     border-radius: 20px;
     margin-left: 15px;
-  	margin-top: 0;
-  	float: none;
+    margin-right: 0;
+  	margin-top: 10px;
+  	float: right;
 }
 
 #search:hover {
 	background-color: #000;
+	-webkit-transition: background 0.3s ease-in-out;
+  	-moz-transition: background 0.3s ease-in-out;
+  	transition: background-color 0.3s ease-in-out;
+}
+
+form input[name="studentNumber"] {
+	border-radius: 20px !important;
+	height: 28px;
+	width: 12%;
+	margin-top: 0 !important;
+	margin-left: 0;
+	margin-right: 20px;
+	text-align: center;
 }

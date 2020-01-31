@@ -12,7 +12,7 @@
 			<%@ include file="header.jsp" %>
 	
 			<form id="contact" action="" method="post">
-				<h3>Contactez Nous</h3>
+				<h3>Contact Us</h3>
 				<fieldset>
 					<input placeholder="Your name" type="text" tabindex="1" required
 						autofocus>

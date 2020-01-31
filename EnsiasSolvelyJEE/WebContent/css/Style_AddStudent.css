@@ -5,18 +5,19 @@ input {
 
 h4 {
 	margin-top: 50px;
+	margin-bottom: 55px;
 	text-align: center;
 }
 
 form {
-	display: grid;
+	display: grid !important;
 	margin: 30px auto;
 }
 
 form div {
 	display: -webkit-box;
 	width: 74%;
-	margin: 10px auto;
+	margin: 13px auto;
 }
 
 input, select {
@@ -53,5 +54,5 @@ form div input:hover {
 }
 
 footer {
-	margin-top: 63px;
+	margin-top: 71px;
 }

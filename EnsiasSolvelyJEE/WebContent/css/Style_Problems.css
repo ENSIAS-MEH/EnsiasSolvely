@@ -1,4 +1,4 @@
-.statut_decision {
+select[name="statut_decision"] {
 	border-radius: 10px; 
 	border-radius: 20px;
 	height: 28px;

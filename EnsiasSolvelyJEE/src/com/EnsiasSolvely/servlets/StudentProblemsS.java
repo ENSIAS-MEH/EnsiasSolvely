@@ -35,7 +35,7 @@ public class StudentProblemsS extends HttpServlet {
 		HttpSession session = request.getSession();
         EleveBEAN eleve = (EleveBEAN) session.getAttribute("eleve");
 		ProblemsBEAN problems[] = new ProblemsBEAN[100];
-		problems = ProblemsDAO.getActifProblems(eleve.getNumeleve());
+		problems = ProblemsDAO.getEleveProblems(eleve.getNumeleve());
 		request.setAttribute("problems", problems);
 		this.getServletContext().getRequestDispatcher("/WEB-INF/StudentProblems.jsp").forward(request, response);
 	}

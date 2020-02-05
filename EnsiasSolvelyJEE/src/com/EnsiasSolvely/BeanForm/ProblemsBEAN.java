@@ -13,11 +13,11 @@ public class ProblemsBEAN {
 	private String prenom;
 	private String nom_comite;
 	private String libelle_type;
-	
+	private int likes;
 	
 	
 	public ProblemsBEAN(int id_probleme, String lieu, String description, Date date_demande, String statut, String nom,
-			String prenom, String nom_comite, String libelle_type) {
+			String prenom, String nom_comite, String libelle_type, int likes) {
 		super();
 		this.id_probleme = id_probleme;
 		this.lieu = lieu;
@@ -28,6 +28,7 @@ public class ProblemsBEAN {
 		this.prenom = prenom;
 		this.nom_comite = nom_comite;
 		this.libelle_type = libelle_type;
+		this.likes = likes;
 	}
 	public int getId_probleme() {
 		return id_probleme;
@@ -82,6 +83,12 @@ public class ProblemsBEAN {
 	}
 	public void setLibelle_type(String libelle_type) {
 		this.libelle_type = libelle_type;
+	}
+	public int getLikes() {
+		return likes;
+	}
+	public void setLikes(int likes) {
+		this.likes = likes;
 	}
 	
 	

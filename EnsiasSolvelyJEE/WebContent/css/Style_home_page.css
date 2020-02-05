@@ -80,28 +80,47 @@ a {
 
 /* MAIN IMAGE */
 
-#main-image {
+#imageSlider0 {
     height: 580px;
-    background: url("../images/bg03.jpg") no-repeat center;
+    width: 100%;
+    background: url("../images/1.jpg") no-repeat center;
 }
 
-#main-image h2 {
+#imageSlider1 {
+    height: 580px;
+    width: 100%;
+    background: url("../images/2.jpg") no-repeat center;
+}
+
+#imageSlider2 {
+    height: 580px;
+    width: 100%;
+    background: url("../images/3.jpg") no-repeat center;
+}
+
+#imageSlider3 {
+    height: 580px;
+    width: 100%;
+    background: url("../images/6.jpg") no-repeat center;
+}
+
+#imageSlider0 h2, #imageSlider1 h2, #imageSlider2 h2, #imageSlider3 h2 {
     font-weight: normal;
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
     padding: 220px 0 0 0;
-    color: #000;
+    color: #fff;
     font-size: 30px;
 }
 
-#main-image h1 {
+#imageSlider0 h1, #imageSlider1 h1, #imageSlider2 h1, #imageSlider3 h1 {
     text-align: center;
     margin-bottom: 15px;
     margin-top: 20px;
     font-family: Arial, sans-serif;
     text-transform: uppercase;
-    color: rgb(0, 0, 0);
+    color: #fff;
     font-size: 40px;
 }
 

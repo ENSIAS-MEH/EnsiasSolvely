@@ -28,7 +28,7 @@ public class ProblemsForm {
 		String lieu = settings.getValeurChamp(request,"lieu");
 		String description = settings.getValeurChamp(request,"description");
 		String date_demande = formatter2.format(df);		
-		String statut = "en attente";
+		String statut = "Actif";
 		int id_comite = 1;
 		if(id_type>3) id_comite = 2;
 		int numEleve = eleve.getNumeleve();
@@ -44,7 +44,7 @@ public class ProblemsForm {
 	 */
 	public static ProblemsBEAN[] userProblems(HttpServletRequest request)  {
 		
-		/* Récupération de la session depuis la requête */
+		/* Ré£µpé²¡tion de la session depuis la requê´¥ */
         HttpSession session = request.getSession();
         EleveBEAN  eleve = (EleveBEAN) session.getAttribute( "eleve");
         int numEleve = eleve.getNumeleve();
@@ -57,20 +57,46 @@ public class ProblemsForm {
 	
 	public void changeStatut(HttpServletRequest request){
 		settings.erreurs.clear();
-		
-		//info recupérer de la JSP
+		HttpSession session = request.getSession();
+        EleveBEAN eleve = (EleveBEAN) session.getAttribute("eleve");
+		//info recupé²¥r de la JSP
 		int id_problem = Integer.parseInt(settings.getValeurChamp(request,"id_problem"));
 		String statut_decision = settings.getValeurChamp(request,"statut_decision");
-		
+		int id_comite = eleve.getId_comite();
 		//statut dans la table
 		String statut = ProblemsDAO.getStatut(id_problem);
 		
 		//traitement
 		if(statut != null && statut.contains("Actif")) {
-				ProblemsDAO.changeStatut(id_problem,statut_decision);
+				ProblemsDAO.changeStatut(id_problem, statut_decision, id_comite);
 		}else {
 			settings.setErreur("problemNotFound","problem not found");
 		}
+	}
+	
+	public void incrementLikes(HttpServletRequest request) {
+		settings.erreurs.clear();
+		HttpSession session = request.getSession();
+		int id_probleme = Integer.parseInt(settings.getValeurChamp(request, "id_probleme"));
+		ProblemsDAO.incrementLikes(id_probleme);
+	}
+	
+	public boolean checkLike(HttpServletRequest request) {
+		settings.erreurs.clear();
+		HttpSession session = request.getSession();
+        EleveBEAN eleve = (EleveBEAN) session.getAttribute("eleve");
+		int id_probleme = Integer.parseInt(settings.getValeurChamp(request, "id_probleme"));
+		int numEleve = eleve.getNumeleve();
+		return ProblemsDAO.isLiked(id_probleme, numEleve);
+	}
+	
+	public void addLike(HttpServletRequest request) {
+		settings.erreurs.clear();
+		HttpSession session = request.getSession();
+        EleveBEAN eleve = (EleveBEAN) session.getAttribute("eleve");
+		int id_probleme = Integer.parseInt(settings.getValeurChamp(request, "id_probleme"));
+		int numEleve = eleve.getNumeleve();
+		ProblemsDAO.setLike(id_probleme, numEleve);
 	}
 
 }

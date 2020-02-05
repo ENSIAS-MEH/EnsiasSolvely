@@ -31,7 +31,7 @@ public class ContactS extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		this.getServletContext().getRequestDispatcher("/WEB-INF/ContactPage.jsp").forward(request, response);
+		this.getServletContext().getRequestDispatcher("/WEB-INF/Contact.jsp").forward(request, response);
 	}
 
 	/**

@@ -211,11 +211,7 @@
 		<band splitType="Stretch"/>
 	</background>
 	<title>
-		<band height="131" splitType="Stretch">
-			<image>
-				<reportElement x="0" y="-1" width="150" height="110" uuid="a5edff8c-d53b-4b26-8323-d41d04d370ef"/>
-				<imageExpression><![CDATA["/WebContent/images/ensias.png"]]></imageExpression>
-			</image>
+		<band height="500" splitType="Stretch">
 			<staticText>
 				<reportElement x="350" y="50" width="210" height="50" uuid="0c5be07d-1582-428f-a18c-c82ee00fed55"/>
 				<textElement>
@@ -237,12 +233,18 @@
 				</textElement>
 				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
 			</textField>
-		</band>
-	</title>
-	<detail>
-		<band height="320" splitType="Stretch">
+			<line>
+				<reportElement x="-3" y="180" width="560" height="1" uuid="85e954a4-415f-4ddd-a853-3e4830c45761"/>
+			</line>
+			<staticText>
+				<reportElement x="0" y="270" width="544" height="30" uuid="a6ba19d7-b4dd-405c-afc7-ed6221932e96"/>
+				<textElement>
+					<font fontName="Microsoft JhengHei" size="19"/>
+				</textElement>
+				<text><![CDATA[Liste globale des étudiants]]></text>
+			</staticText>
 			<componentElement>
-				<reportElement x="0" y="170" width="570" height="150" uuid="b9043601-5263-4521-a9e6-8b192b3296fb">
+				<reportElement x="-8" y="380" width="570" height="90" uuid="b9043601-5263-4521-a9e6-8b192b3296fb">
 					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
 					<property name="com.jaspersoft.studio.table.style.table_header" value="Table_TH"/>
 					<property name="com.jaspersoft.studio.table.style.column_header" value="Table_CH"/>
@@ -386,25 +388,10 @@
 					</jr:column>
 				</jr:table>
 			</componentElement>
-			<line>
-				<reportElement x="0" y="20" width="560" height="1" uuid="85e954a4-415f-4ddd-a853-3e4830c45761"/>
-			</line>
-			<staticText>
-				<reportElement x="0" y="60" width="544" height="30" uuid="a6ba19d7-b4dd-405c-afc7-ed6221932e96"/>
-				<textElement>
-					<font fontName="Microsoft JhengHei" size="19"/>
-				</textElement>
-				<text><![CDATA[Liste globale des étudiants selon l'année : 2020]]></text>
-			</staticText>
+			<image>
+				<reportElement x="20" y="30" width="120" height="110" uuid="9e76cb3c-0adc-4b3f-b21a-111e5cf1e721"/>
+				<imageExpression><![CDATA["C:\\Users\\TOSHIBA\\eclipse-workspace\\EnsiasSolvely\\WebContent\\images\\ensias.png"]]></imageExpression>
+			</image>
 		</band>
-	</detail>
-	<columnFooter>
-		<band height="45" splitType="Stretch"/>
-	</columnFooter>
-	<pageFooter>
-		<band height="54" splitType="Stretch"/>
-	</pageFooter>
-	<summary>
-		<band height="42" splitType="Stretch"/>
-	</summary>
+	</title>
 </jasperReport>

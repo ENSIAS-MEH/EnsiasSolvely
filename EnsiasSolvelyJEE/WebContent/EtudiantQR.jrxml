@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.10.0.final using JasperReports Library version 6.10.0-unknown  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="EtudiantQR" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="41e0ddf6-209b-4aba-9ee4-a593af63d347">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter (2)"/>
+	<queryString language="SQL">
+		<![CDATA[select * from  ensiassolvely.eleve]]>
+	</queryString>
+	<field name="numEleve" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="numEleve"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="eleve"/>
+	</field>
+	<field name="nom" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="nom"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="eleve"/>
+	</field>
+	<field name="prenom" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="prenom"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="eleve"/>
+	</field>
+	<field name="email" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="email"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="eleve"/>
+	</field>
+	<field name="telephone" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="telephone"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="eleve"/>
+	</field>
+	<field name="chambre" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="chambre"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="eleve"/>
+	</field>
+	<field name="login" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="login"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="eleve"/>
+	</field>
+	<field name="motDePasse" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="motDePasse"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="eleve"/>
+	</field>
+	<field name="id_comite" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="id_comite"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="eleve"/>
+	</field>
+	<group name="numEleve">
+		<groupExpression><![CDATA[$F{numEleve}]]></groupExpression>
+	</group>
+	<group name="nom">
+		<groupExpression><![CDATA[$F{nom}]]></groupExpression>
+	</group>
+	<group name="prenom">
+		<groupExpression><![CDATA[$F{prenom}]]></groupExpression>
+	</group>
+	<group name="email">
+		<groupExpression><![CDATA[$F{email}]]></groupExpression>
+	</group>
+	<group name="telephone">
+		<groupExpression><![CDATA[$F{telephone}]]></groupExpression>
+	</group>
+	<group name="chambre">
+		<groupExpression><![CDATA[$F{chambre}]]></groupExpression>
+	</group>
+	<group name="login">
+		<groupExpression><![CDATA[$F{login}]]></groupExpression>
+	</group>
+	<group name="motDePasse">
+		<groupExpression><![CDATA[$F{motDePasse}]]></groupExpression>
+	</group>
+	<group name="id_comite">
+		<groupExpression><![CDATA[$F{id_comite}]]></groupExpression>
+	</group>
+	<background>
+		<band height="2" splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="133" splitType="Stretch">
+			<staticText>
+				<reportElement x="350" y="50" width="210" height="50" uuid="002d9edb-0ab6-4d16-9e0e-7567e9e47e29"/>
+				<textElement>
+					<font fontName="Microsoft JhengHei UI Light" size="31"/>
+				</textElement>
+				<text><![CDATA[Ensias Solvely]]></text>
+			</staticText>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="430" y="100" width="120" height="30" uuid="16f67fcf-94c1-45e6-8ec0-84fd3e944970"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField pattern="HH:mm">
+				<reportElement x="395" y="101" width="100" height="30" uuid="60f97b88-2ecd-47f7-b699-f98730043f90"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="20" y="10" width="120" height="110" uuid="9c074f58-2afd-4b2c-a703-55e01ec186e2"/>
+				<imageExpression><![CDATA["C:\\Users\\TOSHIBA\\eclipse-workspace\\EnsiasSolvely\\WebContent\\images\\ensias.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="109" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="50" width="544" height="30" uuid="6cb6de11-8e05-4142-a660-8bb4e872852f"/>
+				<textElement textAlignment="Center">
+					<font fontName="Microsoft JhengHei" size="19"/>
+				</textElement>
+				<text><![CDATA[Identification des étudiants a l'aide d'un code QR]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="0" width="560" height="1" uuid="f40b4838-aa60-4790-ad94-fd04cba92d91"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="160" splitType="Stretch">
+			<componentElement>
+				<reportElement x="380" y="36" width="122" height="88" uuid="e9892521-d83f-43be-8e27-aa03a0bb5d3f"/>
+				<jr:QRCode xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<jr:codeExpression><![CDATA["Login = "+$F{login}+"\t"+"Mot de passe = "+$F{motDePasse}]]></jr:codeExpression>
+				</jr:QRCode>
+			</componentElement>
+			<textField>
+				<reportElement x="120" y="30" width="100" height="30" uuid="66679829-702f-4e81-b8d1-589292b7ef47"/>
+				<textElement>
+					<font fontName="Microsoft JhengHei UI" size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{numEleve}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="70" width="100" height="30" uuid="b8db0656-679a-4481-b0a7-2f4f9d45b61a"/>
+				<textElement>
+					<font fontName="Microsoft JhengHei UI" size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nom}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="110" width="100" height="30" uuid="0cd3fcb6-70df-4fc6-813c-2dd92c3c7f26"/>
+				<textElement>
+					<font fontName="Microsoft JhengHei UI" size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{prenom}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="-20" y="10" width="595" height="1" uuid="1c3d9a05-1a0c-4a3d-9e8d-fd49f2d6e9cd"/>
+			</line>
+			<staticText>
+				<reportElement x="10" y="28" width="100" height="30" uuid="4e69b217-6dd5-4e28-b203-9d852289c6cf"/>
+				<textElement>
+					<font fontName="Microsoft JhengHei" size="16"/>
+				</textElement>
+				<text><![CDATA[N° Eleve]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="70" width="100" height="30" uuid="e8f75bd1-8253-4701-b682-c17be963a5d5"/>
+				<textElement>
+					<font fontName="Microsoft JhengHei" size="16"/>
+				</textElement>
+				<text><![CDATA[Nom]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="110" width="100" height="30" uuid="bf0232d6-7695-4f20-8a20-e2f7283b2594"/>
+				<textElement>
+					<font fontName="Microsoft JhengHei" size="16"/>
+				</textElement>
+				<text><![CDATA[Prénom]]></text>
+			</staticText>
+		</band>
+	</detail>
+</jasperReport>

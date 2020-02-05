@@ -38,14 +38,14 @@ public class ReportingDAO {
 		/*
 		 * This function returns Actif problems
 		 */
-		public static void getReporting(int numReporting, HttpServletResponse response)  {
+		public static void getReporting(int numReporting, String path,HttpServletResponse response)  {
 
 				JasperReport report = null;
 				JasperDesign design = null;
 				   
 				ProblemsBEAN[] problems = new ProblemsBEAN[100];
 				try {
-					design = JRXmlLoader.load("StudentStatistiques");
+					design = JRXmlLoader.load(path);
 					Map<String, Object> parameters = new HashMap<String,Object>();
 				   	connection = ConnectionFactory.getConnection();
 				    report = JasperCompileManager.compileReport(design);

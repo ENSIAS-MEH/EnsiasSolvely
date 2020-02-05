@@ -69,12 +69,7 @@
 		
 		<%@ include file="footer.jsp" %>
 		
-		<script type="text/javascript">
-			var erreur = "${form.erreurs['problemNotFound']}";
-			if(erreur.length>0){
-				alert(erreur);	
-			}
-		</script>
+
 		
 </body>
 </html>

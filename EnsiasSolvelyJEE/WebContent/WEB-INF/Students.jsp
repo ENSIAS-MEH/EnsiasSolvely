@@ -11,17 +11,19 @@
 	</head>
 	<body>
 		<%@ include file="header.jsp" %>
-		
-		<a id="addStudent" href="AddStudent" style="width: 9%; height:28px;">New student</a>
+			<a class="btn-1" id="studentsList" href="RecupererReport?reporting=1" style="width: 9%; height:28px;">Students List</a>
+			<a class="btn-1" id="studentsQR" href="RecupererReport?reporting=2" style="width: 9%; height:28px;">Students QR</a>
+			<a class="btn-1" id="addStudent" href="AddStudent" style="width: 9%; height:28px;">New student</a>
+			
 		<h4 style="text-align: center; padding-top: 20px; padding-bottom: 15px;">List of Students</h4>
 		<nav>
 			<section class="table-responsive" id="foncSec2">
 				<form method="post" action="StudentsS">
-						<input type="number" name="Student_number" placeholder="Student number" min="1" required/>
+						<input type="number" name="Student_number" placeholder="Student number" min="1" style="float: left; border-radius: 15px; margin-left: 0;" required/>
 						<input type="submit" id="search" value="Search">
-					</form>
+				</form>
 				<div id="section-to-print">
-					<table class="table table-bordered" id="myTable" style="">
+					<table class="table table-bordered" id="myTable">
 						<thead style="background-color:#C0C0C0;">
 							<tr>
 								<th scope="col">Number</th>
@@ -60,9 +62,8 @@
 			</section>
 		</nav>
 		
-        <%@ include file="footer.jsp" %>
-        
-        <script>
+		<%@ include file="footer.jsp" %>
+		<script>
 			var count = document.getElementById("myTable").rows.length;
 			if(count > 4) document.getElementById('footer').style["margin-top"] = "0";
 			else if(count == 3) document.getElementById('footer').style["margin-top"] = "52px";

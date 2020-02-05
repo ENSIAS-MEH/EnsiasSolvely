@@ -11,6 +11,7 @@
 	</head>
 	<body>
 		<%@ include file="header.jsp" %>
+		<a class="btn-1" id="StatisticsArchive" href="RecupererReport?reporting=7" style="width: 9%; height:28px;">Statistics</a>
 		<nav>
 			<section class="table-responsive" id="sec6">
 				<div id="section-to-print">

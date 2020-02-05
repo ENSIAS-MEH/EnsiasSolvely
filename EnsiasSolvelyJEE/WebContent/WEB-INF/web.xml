@@ -82,6 +82,14 @@
     <servlet-name>AddStudentS</servlet-name>
     <url-pattern>/AddStudent</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <servlet-name>StudentProblemsS</servlet-name>
+    <servlet-class>com.EnsiasSolvely.servlets.StudentProblemsS</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StudentProblemsS</servlet-name>
+    <url-pattern>/StudentProblems</url-pattern>
+  </servlet-mapping>
 
   <jsp-config>
     <jsp-property-group>

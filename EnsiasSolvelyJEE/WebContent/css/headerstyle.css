@@ -88,6 +88,7 @@
     border-radius: 20px;
     width: 80%;
     outline: none;
+    text-align: center !important;
 }
 
 .container input[type="text"]:focus, .container input[type="password"]:focus {
@@ -153,7 +154,7 @@ h2 {
 }
 
 #circle {
-	margin-left: 49% !important;
+	margin-left: 30% !important;
 	margin-top: 15px;
     width: 10px;
     height: 10px;

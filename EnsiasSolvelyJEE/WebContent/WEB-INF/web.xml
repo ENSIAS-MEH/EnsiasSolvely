@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:jsp="http://java.sun.com/xml/ns/javaee/jsp" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
   <display-name>EnsiasSolvelyJEE</display-name>
-  
   <servlet>
     <servlet-name>HomeS</servlet-name>
     <servlet-class>com.EnsiasSolvely.servlets.HomeS</servlet-class>
@@ -10,7 +9,6 @@
     <servlet-name>HomeS</servlet-name>
     <url-pattern>/Home</url-pattern>
   </servlet-mapping>
-  
   <servlet>
     <servlet-name>AboutUsS</servlet-name>
     <servlet-class>com.EnsiasSolvely.servlets.AboutUsS</servlet-class>
@@ -19,7 +17,6 @@
     <servlet-name>AboutUsS</servlet-name>
     <url-pattern>/AboutUs</url-pattern>
   </servlet-mapping>
-  
   <servlet>
     <servlet-name>DeclareS</servlet-name>
     <servlet-class>com.EnsiasSolvely.servlets.DeclareS</servlet-class>
@@ -28,7 +25,6 @@
     <servlet-name>DeclareS</servlet-name>
     <url-pattern>/Declare</url-pattern>
   </servlet-mapping>
-  
   <servlet>
     <servlet-name>ProblemsS</servlet-name>
     <servlet-class>com.EnsiasSolvely.servlets.ProblemsS</servlet-class>
@@ -37,7 +33,6 @@
     <servlet-name>ProblemsS</servlet-name>
     <url-pattern>/Problems</url-pattern>
   </servlet-mapping>
-  
   <servlet>
     <servlet-name>StudentsS</servlet-name>
     <servlet-class>com.EnsiasSolvely.servlets.StudentsS</servlet-class>
@@ -46,7 +41,6 @@
     <servlet-name>StudentsS</servlet-name>
     <url-pattern>/Students</url-pattern>
   </servlet-mapping>
-  
   <servlet>
     <servlet-name>ContactS</servlet-name>
     <servlet-class>com.EnsiasSolvely.servlets.ContactS</servlet-class>
@@ -55,7 +49,6 @@
     <servlet-name>ContactS</servlet-name>
     <url-pattern>/Contact</url-pattern>
   </servlet-mapping>
-  
   <servlet>
     <servlet-name>ProfileS</servlet-name>
     <servlet-class>com.EnsiasSolvely.servlets.ProfileS</servlet-class>
@@ -64,7 +57,6 @@
     <servlet-name>ProfileS</servlet-name>
     <url-pattern>/Profile</url-pattern>
   </servlet-mapping>
-  
   <servlet>
     <servlet-name>ArchiveS</servlet-name>
     <servlet-class>com.EnsiasSolvely.servlets.ArchiveS</servlet-class>
@@ -73,7 +65,6 @@
     <servlet-name>ArchiveS</servlet-name>
     <url-pattern>/Archive</url-pattern>
   </servlet-mapping>
-  
   <servlet>
     <servlet-name>AddStudentS</servlet-name>
     <servlet-class>com.EnsiasSolvely.servlets.AddStudentS</servlet-class>
@@ -90,12 +81,18 @@
     <servlet-name>StudentProblemsS</servlet-name>
     <url-pattern>/StudentProblems</url-pattern>
   </servlet-mapping>
-
+  <servlet>
+    <servlet-name>StatisticsS</servlet-name>
+    <servlet-class>com.EnsiasSolvely.servlets.StatisticsS</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StatisticsS</servlet-name>
+    <url-pattern>/Statistics</url-pattern>
+  </servlet-mapping>
   <jsp-config>
     <jsp-property-group>
       <url-pattern>*.jsp</url-pattern>
       <include-prelude>/WEB-INF/taglibs.jsp</include-prelude>
     </jsp-property-group>
   </jsp-config>
-  
 </web-app>

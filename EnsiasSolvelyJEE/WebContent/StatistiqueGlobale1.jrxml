@@ -24,6 +24,18 @@
 	<field name="notsolved" class="java.math.BigDecimal">
 		<property name="com.jaspersoft.studio.field.label" value="notsolved"/>
 	</field>
+	<variable name="Total" class="java.math.BigDecimal">
+		<variableExpression><![CDATA[$F{Solved}.add($F{notsolved})]]></variableExpression>
+	</variable>
+	<variable name="mult" class="java.lang.Integer">
+		<variableExpression><![CDATA[$F{Solved}.intValue()*100]]></variableExpression>
+	</variable>
+	<variable name="Solved" class="java.lang.Integer">
+		<variableExpression><![CDATA[$F{Solved}.intValue()*100/($F{Solved}.intValue()+$F{notsolved}.intValue())]]></variableExpression>
+	</variable>
+	<variable name="not" class="java.lang.Integer">
+		<variableExpression><![CDATA[100-$V{Solved}]]></variableExpression>
+	</variable>
 	<group name="date_demande">
 		<groupExpression><![CDATA[$F{date_demande}]]></groupExpression>
 	</group>
@@ -43,11 +55,7 @@
 		<band splitType="Stretch"/>
 	</background>
 	<title>
-		<band height="131" splitType="Stretch">
-			<image>
-				<reportElement x="0" y="-1" width="150" height="110" uuid="9e54d196-0ee0-447a-bab3-4ca93825554b"/>
-				<imageExpression><![CDATA["/WebContent/images/ensias.png"]]></imageExpression>
-			</image>
+		<band height="140" splitType="Stretch">
 			<staticText>
 				<reportElement x="350" y="50" width="210" height="50" uuid="aeba7491-7fc3-48b5-bb3c-fc60c7c54a1c"/>
 				<textElement>
@@ -69,13 +77,17 @@
 				</textElement>
 				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
 			</textField>
+			<image>
+				<reportElement x="20" y="30" width="120" height="110" uuid="e7f56a43-f866-48d0-9d39-3761229e566f"/>
+				<imageExpression><![CDATA["C:\\Users\\TOSHIBA\\eclipse-workspace\\EnsiasSolvely\\WebContent\\images\\ensias.png"]]></imageExpression>
+			</image>
 		</band>
 	</title>
 	<detail>
-		<band height="470" splitType="Stretch">
+		<band height="550" splitType="Stretch">
 			<pieChart>
 				<chart evaluationTime="Report">
-					<reportElement x="52" y="130" width="450" height="320" uuid="31f1858b-70d9-4cad-87ee-8a96e0b3f795"/>
+					<reportElement x="40" y="230" width="450" height="320" uuid="5a93fc30-3a1f-417b-91c5-e418257a4f7b"/>
 					<chartTitle/>
 					<chartSubtitle/>
 					<chartLegend/>
@@ -84,12 +96,12 @@
 					<pieSeries>
 						<keyExpression><![CDATA["Solved"]]></keyExpression>
 						<valueExpression><![CDATA[$F{Solved}]]></valueExpression>
-						<labelExpression><![CDATA[$F{Solved}.toString()]]></labelExpression>
+						<labelExpression><![CDATA[$V{Solved}.toString()+"%"]]></labelExpression>
 					</pieSeries>
 					<pieSeries>
 						<keyExpression><![CDATA["Not Solved"]]></keyExpression>
 						<valueExpression><![CDATA[$F{notsolved}]]></valueExpression>
-						<labelExpression><![CDATA[$F{notsolved}.toString()]]></labelExpression>
+						<labelExpression><![CDATA[$V{not}.toString()+"%"]]></labelExpression>
 					</pieSeries>
 				</pieDataset>
 				<piePlot>
@@ -98,14 +110,14 @@
 				</piePlot>
 			</pieChart>
 			<staticText>
-				<reportElement x="1" y="70" width="544" height="30" uuid="b569008b-7cdd-4c07-822f-835a81f2ec9c"/>
+				<reportElement x="10" y="110" width="544" height="30" uuid="b569008b-7cdd-4c07-822f-835a81f2ec9c"/>
 				<textElement>
 					<font fontName="Microsoft JhengHei" size="19"/>
 				</textElement>
 				<text><![CDATA[Statistique de résolution de problèmes selon l'année : 2020]]></text>
 			</staticText>
 			<line>
-				<reportElement x="0" y="20" width="560" height="1" uuid="7d7ca9f7-0910-4eeb-90e1-2013b344f30d"/>
+				<reportElement x="-3" y="10" width="560" height="1" uuid="7d7ca9f7-0910-4eeb-90e1-2013b344f30d"/>
 			</line>
 		</band>
 	</detail>

@@ -1,0 +1,28 @@
+#buttons {
+	display: grid;
+}
+
+#btnContainer {
+	width: 100%;
+	height: 551px;
+	background: url("../images/3.jpg") no-repeat center;
+	padding: 10%;
+}
+
+.btn-1 {
+	padding: 5px;
+	border-radius: 20px;
+	color: white !important;
+	margin: 20px auto 10px auto;
+	text-decoration: none !important;
+    font-size: 15px;
+    background-color: #de0f0f;
+    text-align: center;
+    line-height: 18px;}
+
+.btn-1:hover {
+    background-color: #000;
+    -webkit-transition: background 0.3s ease-in-out;
+  	-moz-transition: background 0.3s ease-in-out;
+  	transition: background-color 0.3s ease-in-out;
+}

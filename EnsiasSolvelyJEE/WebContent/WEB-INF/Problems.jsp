@@ -13,6 +13,7 @@
 		<%@ include file="header.jsp" %>
 		
 		<nav>
+			<a class="btn-1" id="problemsList" href="RecupererReport?reporting=3" style="width: 9%; height:28px;">Print</a>
 			<section class="sec1">
 				<h4 id="ko">List of problems</h4>
 			</section>

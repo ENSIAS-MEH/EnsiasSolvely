@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.10.0.final using JasperReports Library version 6.10.0-unknown  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="StatistiqueDivers" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="0e0e2dce-9cbe-4c55-85ff-7204360a7744">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter (2)"/>
+	<queryString language="SQL">
+		<![CDATA[select  ensiassolvely.comite.nom_comite, ensiassolvely.probleme.statut,sum(case when  STRCMP(ensiassolvely.probleme.statut,"Solved")    then 0 else 1 end) AS  Solved ,  sum(case when  STRCMP(ensiassolvely.probleme.statut,"Not Solved") then 0 else 1 end) as notsolved from ensiassolvely.probleme, ensiassolvely.comite  where STRCMP( ensiassolvely.comite.nom_comite ,"divers")=0 and  ensiassolvely.comite.id_comite =   ensiassolvely.probleme.id_comite]]>
+	</queryString>
+	<field name="nom_comite" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="nom_comite"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="comite"/>
+	</field>
+	<field name="statut" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="statut"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="probleme"/>
+	</field>
+	<field name="Solved" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.label" value="Solved"/>
+	</field>
+	<field name="notsolved" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.label" value="notsolved"/>
+	</field>
+	<group name="nom_comite">
+		<groupExpression><![CDATA[$F{nom_comite}]]></groupExpression>
+	</group>
+	<group name="statut">
+		<groupExpression><![CDATA[$F{statut}]]></groupExpression>
+	</group>
+	<group name="Solved">
+		<groupExpression><![CDATA[$F{Solved}]]></groupExpression>
+	</group>
+	<group name="notsolved">
+		<groupExpression><![CDATA[$F{notsolved}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="130" splitType="Stretch">
+			<staticText>
+				<reportElement x="350" y="37" width="210" height="50" uuid="ccf2d69e-061c-4b28-897a-45c7d32de6d7"/>
+				<textElement>
+					<font fontName="Microsoft JhengHei UI Light" size="31"/>
+				</textElement>
+				<text><![CDATA[Ensias Solvely]]></text>
+			</staticText>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="430" y="100" width="120" height="30" uuid="d2787b08-5ce9-4f94-8f75-887e3f72f48c"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField pattern="HH:mm">
+				<reportElement x="396" y="100" width="100" height="30" uuid="058d38b8-c4de-456f-b1ed-a6d4e1122caf"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="20" y="10" width="120" height="110" uuid="4ed15ec0-909b-4b5a-82d3-55c25659eb6a"/>
+				<imageExpression><![CDATA["C:\\Users\\TOSHIBA\\eclipse-workspace\\EnsiasSolvely\\WebContent\\images\\ensias.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<detail>
+		<band height="530" splitType="Stretch">
+			<stackedBarChart>
+				<chart evaluationTime="Report">
+					<reportElement x="80" y="220" width="350" height="310" uuid="4ca645ad-2e41-42c7-ac12-315840aed499"/>
+					<chartTitle/>
+					<chartSubtitle/>
+					<chartLegend/>
+				</chart>
+				<categoryDataset>
+					<categorySeries>
+						<seriesExpression><![CDATA["Solved"]]></seriesExpression>
+						<categoryExpression><![CDATA["Solved"]]></categoryExpression>
+						<valueExpression><![CDATA[$F{Solved}]]></valueExpression>
+					</categorySeries>
+					<categorySeries>
+						<seriesExpression><![CDATA["Not Solved"]]></seriesExpression>
+						<categoryExpression><![CDATA["Not Solved"]]></categoryExpression>
+						<valueExpression><![CDATA[$F{notsolved}]]></valueExpression>
+					</categorySeries>
+				</categoryDataset>
+				<barPlot>
+					<plot/>
+					<itemLabel/>
+					<categoryAxisFormat>
+						<axisFormat labelColor="#000000" tickLabelColor="#000000" axisLineColor="#000000"/>
+					</categoryAxisFormat>
+					<valueAxisFormat>
+						<axisFormat labelColor="#000000" tickLabelColor="#000000" axisLineColor="#000000"/>
+					</valueAxisFormat>
+				</barPlot>
+			</stackedBarChart>
+			<staticText>
+				<reportElement x="2" y="80" width="544" height="30" uuid="1cfe7386-efb5-47af-b0e4-a6b48d368b7c"/>
+				<textElement>
+					<font fontName="Microsoft JhengHei" size="19"/>
+				</textElement>
+				<text><![CDATA[Distrubtion des problèmes relatifs à la comité divers]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="-1" width="560" height="1" uuid="103f7ff7-3b3d-435c-af57-01778c782f57"/>
+			</line>
+		</band>
+	</detail>
+</jasperReport>

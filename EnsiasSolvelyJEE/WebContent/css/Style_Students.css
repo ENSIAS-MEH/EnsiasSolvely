@@ -1,21 +1,32 @@
-#addStudent {
+.btn-1 {
 	padding: 5px;
 	border-radius: 20px;
-	color: white;
-	float: right;
+	color: white !important;
 	margin: 20px 10px;
-	text-decoration: none;
-	position: absolute;
-	right: 0;
+	text-decoration: none !important;
     font-size: 15px;
     background-color: #de0f0f;
     height: 25px;
     width: 100px;
     text-align: center;
     line-height: 18px;
+    float: right;
+    position: absolute;
 }
 
-#addStudent:hover {
+#addStudent {
+	right: 0;
+}
+
+#studentsList {
+	left: 0;
+}
+
+#studentsQR {
+	left: 10%;
+}
+
+.btn-1:hover {
     background-color: #000;
     -webkit-transition: background 0.3s ease-in-out;
   	-moz-transition: background 0.3s ease-in-out;
@@ -24,7 +35,7 @@
 
 h4 {
 	text-align: center;
-	margin: 30px auto 20px auto;
+	margin: 50px auto 20px auto;
 }
 
 

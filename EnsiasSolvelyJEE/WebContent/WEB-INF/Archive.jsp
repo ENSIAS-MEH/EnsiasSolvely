@@ -11,11 +11,9 @@
 	</head>
 	<body>
 		<%@ include file="header.jsp" %>
-		
 		<nav>
 			<section class="table-responsive" id="sec6">
 				<div id="section-to-print">
-					<img  class="royaume" id="royaume" src="images/image_logo.png" style="display:none;">
 					<section class="sec1">
 						<h4>Problems of the year :  <label id="annee"></label></h4>
 					</section>
@@ -36,44 +34,40 @@
 						<tbody>
 							<c:forEach items="${problems}" var="item">
 								<c:if test="${!empty item }">
-								<form id="${item.id_probleme}" method="post" action="Archive">
 									<tr>
 										<td>
-			 								<input name="id_probleme" value="${item.id_probleme}" >
+			 								${item.id_probleme}
 			 							</td>
 			 							<td>
-			 								<input name="lieu" value="${item.lieu}" >
+			 								${item.lieu}
 			 							</td>
 			 							<td>
-			 								<input name="date_demande" value="${item.date_demande}" >
+			 								${item.date_demande}
 			 							</td>
 			 							<td>
-			 								<input name="libelle_type" value="${item.libelle_type}" >
+			 								${item.libelle_type}
 			 							</td>
 			 							<td>
-			 								<input name="nom" value="${item.nom}" >
+			 								${item.nom}
 			 							</td>
 			 							<td>
-			 								<input name="prenom" value="${item.prenom}" >
+			 								${item.prenom}
 			 							</td>
 			 							<td>
-			 								<input name="description" value="${item.description}" >
+			 								${item.description}
 			 							</td>
 			 							<td>
-			 								<input name="id_comite" value="${item.nom_comite}" >
+			 								${item.nom_comite}
 			 							</td>
 			 							<td>
-			 								<input name="statut" value="${item.statut}" >
+			 								${item.statut}
 			 							</td>
 									</tr>
-								</form>
 								</c:if>
 							</c:forEach>
 						</tbody>
 					</table>
 				</div>
-				<button id ="print" class="button-3" type="submit">Print</button>
-
 			</section>
 		
 		<%@ include file="footer.jsp" %>

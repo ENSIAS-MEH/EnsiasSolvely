@@ -45,7 +45,11 @@
 							</tr>
 							<tr>
 								<th scope="row">Committe id</th>
-								<td><input value="${empty eleve?'':eleve.id_comite}" name="id_comite" id="login" pattern="1|2"></input></td>
+								<td ><input  value="${empty eleve?'':eleve.id_comite}" name="id_comite" id="login" pattern="1|2"></input></td>
+							</tr>
+							<tr>
+								<th scope="row">Committe name</th>
+								<td><input value="${empty eleve?'':eleve.nom_comite}" name="nom_comite" id="login" pattern="1|2" readonly="readonly"></input></td>
 							</tr>
 							<tr>
 								<th scope="row">Login</th>

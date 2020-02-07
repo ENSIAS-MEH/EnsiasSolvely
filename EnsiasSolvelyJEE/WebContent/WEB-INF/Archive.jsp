@@ -18,6 +18,7 @@
 					<section class="sec1">
 						<h4>Problems of the year :  <label id="annee"></label></h4>
 					</section>
+					<h6 id = "h6Text" style="display:none;">Pas d'archive</h6>
 					<table class="table table-bordered" id="myTable">
 						<thead id="ok">
 							<tr class="tete">
@@ -72,5 +73,12 @@
 			</section>
 		
 		<%@ include file="footer.jsp" %>
+		<script type="text/javascript">
+			var vProblem = "${empty problems[0].id_probleme ? 0:1}";
+			if(vProblem == 0){
+				document.getElementById("ok").style.display ='none';
+				document.getElementById("h6Text").style.display ='block';
+			}
+		</script>
 	</body>
 </html>

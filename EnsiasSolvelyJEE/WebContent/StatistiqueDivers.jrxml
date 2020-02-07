@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Created with Jaspersoft Studio version 6.10.0.final using JasperReports Library version 6.10.0-unknown  -->
+<!-- Created with Jaspersoft Studio version 6.11.0.final using JasperReports Library version 6.11.0-0c4056ccaa4d25a5a8c45672d2f764ea3498bebb  -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="StatistiqueDivers" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="0e0e2dce-9cbe-4c55-85ff-7204360a7744">
 	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter (2)"/>
+	<parameter name="imgPath" class="java.lang.String"/>
 	<queryString language="SQL">
 		<![CDATA[select  ensiassolvely.comite.nom_comite, ensiassolvely.probleme.statut,sum(case when  STRCMP(ensiassolvely.probleme.statut,"Solved")    then 0 else 1 end) AS  Solved ,  sum(case when  STRCMP(ensiassolvely.probleme.statut,"Not Solved") then 0 else 1 end) as notsolved from ensiassolvely.probleme, ensiassolvely.comite  where STRCMP( ensiassolvely.comite.nom_comite ,"divers")=0 and  ensiassolvely.comite.id_comite =   ensiassolvely.probleme.id_comite]]>
 	</queryString>
@@ -60,7 +61,7 @@
 			</textField>
 			<image>
 				<reportElement x="20" y="10" width="120" height="110" uuid="4ed15ec0-909b-4b5a-82d3-55c25659eb6a"/>
-				<imageExpression><![CDATA["C:\\Users\\TOSHIBA\\eclipse-workspace\\EnsiasSolvely\\WebContent\\images\\ensias.png"]]></imageExpression>
+				<imageExpression><![CDATA[$P{imgPath}]]></imageExpression>
 			</image>
 		</band>
 	</title>
@@ -74,6 +75,7 @@
 					<chartLegend/>
 				</chart>
 				<categoryDataset>
+					<dataset resetType="Report"/>
 					<categorySeries>
 						<seriesExpression><![CDATA["Solved"]]></seriesExpression>
 						<categoryExpression><![CDATA["Solved"]]></categoryExpression>

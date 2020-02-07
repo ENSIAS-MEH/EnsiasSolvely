@@ -19,7 +19,7 @@
 			</section>
 			<section class="table-responsive" id="sec3">
 					<form id="changeStatut" method="post" action="ProblemsS">
-						<input type="number" name="id_problem" placeholder="Id problem" min="1"/>
+						<input type="number" name="id_problem" placeholder="Id problem" min="1" required/>
 						<select name="statut_decision">
 							<option value="Solved">Solved</option>
 							<option value="Not Solved">Not Solved</option>
@@ -27,13 +27,14 @@
 						<input type="submit" id="apply" value="apply">
 						<%-- <button type="submit" id="print" value="apply">Apply</button> --%>
 					</form>
+					<h6 id = "h6Text" style="display:none;">Pas de probleme</h6>
 					<table class="table table-bordered" id="myTable" style="padding-bottom: 0;">
-						<thead style="background-color:#C0C0C0;">
+						<thead id="tableHeader" style="background-color:#C0C0C0;">
 							<tr>
 								<th scope="col">Id problem</th>
 								<th scope="col">Place</th>
 								<th scope="col">Date demande</th>
-								<th scope="col">type</th>
+								<th scope="col"><a id="reorderType" onClick="reoderType()" href = "#" style="text-decoration: none; color:lightgreen;">type</a></th>
 								<th scope="col">Last name</th>
 								<th scope="col">First name</th>
 								<th scope="col">Description</th>
@@ -72,7 +73,7 @@
 				 							<td>
 				 								${item.statut}
 				 							</td>
-				 							<td style="width: 10%;"><img id="${item.id_probleme}+1" onClick="myFunction(${item.id_probleme})" src="images/like_before.png">  ${item.likes}</td>
+				 							<td style= "width:10%;"><img id="${item.id_probleme}+1" onClick="myFunction(${item.id_probleme})" src="images/like_before.png">  ${item.likes}</td>
 			 							</tr>
 			 						</form>	
 			 						<c:forEach items="${problemsLiked}" var="item2">
@@ -117,6 +118,27 @@
 				document.getElementById("changeStatut").style.display = 'none';
 				document.getElementById("problemsList").style.display = 'none';
 			}
+		</script>
+		<script type="text/javascript">
+			var vProblem = "${empty problems[0].id_probleme ? 0:1}";
+			if(vProblem == 0){
+				document.getElementById("tableHeader").style.display ='none';
+				document.getElementById("h6Text").style.display ='block';
+			}
+		</script>
+		<script>
+			function reoderType(){
+				var rdr = "${empty rdr?0:1}";
+				if(rdr == 0){
+					document.getElementById("reorderType").href = "Problems?rdr=1";
+				}else{ 
+					document.getElementById("reorderType").href = "Problems?rdr=0";
+				}
+			}
+		</script>
+		<script type="text/javascript">
+			var rdr = "${empty rdr?0:1}";
+			if(rdr == 1) document.getElementById("reorderType").text = "Urgent";
 		</script>
 </body>
 </html>

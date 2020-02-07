@@ -38,7 +38,7 @@ public class ReportingDAO {
 		/*
 		 * This function returns Actif problems
 		 */
-		public static void getReporting(int numReporting, String path,HttpServletResponse response)  {
+		public static void getReporting(int numReporting, String path, String imgPath,HttpServletResponse response)  {
 
 				JasperReport report = null;
 				JasperDesign design = null;
@@ -47,6 +47,7 @@ public class ReportingDAO {
 				try {
 					design = JRXmlLoader.load(path);
 					Map<String, Object> parameters = new HashMap<String,Object>();
+					parameters.put("imgPath",imgPath);
 				   	connection = ConnectionFactory.getConnection();
 				    report = JasperCompileManager.compileReport(design);
 				   	byte[] byteStream = JasperRunManager.runReportToPdf(report, parameters, connection);

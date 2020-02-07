@@ -1,0 +1,50 @@
+\babel@toc {french}{}
+\contentsline {chapter}{Remerciement}{2}
+\contentsline {chapter}{Introduction}{8}
+\contentsline {chapter}{\numberline {1}Pr\IeC {\'e}sentation de la probl\IeC {\'e}matique li\IeC {\'e}e \IeC {\`a} la r\IeC {\'e}solution des probl\IeC {\`e}mes}{9}
+\contentsline {section}{\numberline {1.1}Introduction}{10}
+\contentsline {section}{\numberline {1.2}Pr\IeC {\'e}sentation du contexte du site web Ensias Solvely\IeC {\nobreakspace }}{10}
+\contentsline {section}{\numberline {1.3}Analyse des besoins}{10}
+\contentsline {subsection}{\numberline {1.3.1}Identification des acteurs\IeC {\nobreakspace }}{11}
+\contentsline {subsection}{\numberline {1.3.2}Besoins fonctionnels\IeC {\nobreakspace }}{11}
+\contentsline {section}{\numberline {1.4}Processus de d\IeC {\'e}veloppement }{12}
+\contentsline {subsection}{\numberline {1.4.1}Le mod\IeC {\`e}le de d\IeC {\'e}veloppement choisi\IeC {\nobreakspace }}{12}
+\contentsline {subsection}{\numberline {1.4.2}Planning pr\IeC {\'e}visionnel}{13}
+\contentsline {section}{\numberline {1.5}Conclusion}{14}
+\contentsline {chapter}{\numberline {2}Analyse et conception}{15}
+\contentsline {section}{\numberline {2.1}Introduction}{16}
+\contentsline {section}{\numberline {2.2}Langage de conception\IeC {\nobreakspace }}{16}
+\contentsline {subsection}{\numberline {2.2.1}Pr\IeC {\'e}sentation d\IeC {\textquoteright }UML\IeC {\nobreakspace }}{16}
+\contentsline {subsection}{\numberline {2.2.2}Avantages d\IeC {\textquoteright }UML\IeC {\nobreakspace }}{16}
+\contentsline {section}{\numberline {2.3}Mod\IeC {\'e}lisation et sp\IeC {\'e}cification Fonctionnelles\IeC {\nobreakspace }}{16}
+\contentsline {subsection}{\numberline {2.3.1}Diagrammes Cas d\IeC {\textquoteright }utilisation\IeC {\nobreakspace }}{16}
+\contentsline {subsection}{\numberline {2.3.2}C\IeC {\^o}t\IeC {\'e} \IeC {\'e}l\IeC {\`e}ve\IeC {\nobreakspace }}{18}
+\contentsline {subsubsection}{Description du cas d\IeC {\textquoteright }utilisation <G\IeC {\'e}rer le compte>\IeC {\nobreakspace }}{18}
+\contentsline {subsubsection}{Description du cas d\IeC {\textquoteright }utilisation < Publier un probl\IeC {\`e}me >\IeC {\nobreakspace }}{19}
+\contentsline {subsection}{\numberline {2.3.3}C\IeC {\^o}t\IeC {\'e} comit\IeC {\'e}\IeC {\nobreakspace }}{19}
+\contentsline {subsubsection}{Description du cas d\IeC {\textquoteright }utilisation <G\IeC {\'e}rer les probl\IeC {\`e}mes >\IeC {\nobreakspace }}{19}
+\contentsline {subsubsection}{Description du cas d\IeC {\textquoteright }utilisation <Visualiser statistiques>\IeC {\nobreakspace }}{20}
+\contentsline {section}{\numberline {2.4}Conception}{21}
+\contentsline {subsubsection}{Diagrammes de s\IeC {\'e}quence}{21}
+\contentsline {subsubsection}{Diagramme d\IeC {\textquoteright }\IeC {\'e}tats-transition}{28}
+\contentsline {chapter}{\numberline {3}Cr\IeC {\'e}ation de la base de donn\IeC {\'e}es}{29}
+\contentsline {section}{\numberline {3.1}Introduction}{30}
+\contentsline {section}{\numberline {3.2}Diagramme de classe}{30}
+\contentsline {section}{\numberline {3.3}Tables de la base de donn\IeC {\'e}es}{31}
+\contentsline {subsubsection}{\relax $\@@underline {\hbox {eleve}}\mathsurround \z@ $\relax }{31}
+\contentsline {subsubsection}{\relax $\@@underline {\hbox {probleme}}\mathsurround \z@ $\relax }{31}
+\contentsline {subsubsection}{\relax $\@@underline {\hbox {comite}}\mathsurround \z@ $\relax }{31}
+\contentsline {subsubsection}{\relax $\@@underline {\hbox {boite}}\mathsurround \z@ $\relax }{32}
+\contentsline {subsubsection}{\relax $\@@underline {\hbox {aimer}}\mathsurround \z@ $\relax }{32}
+\contentsline {section}{\numberline {3.4}Conclusion\IeC {\nobreakspace }}{32}
+\contentsline {chapter}{\numberline {4}R\IeC {\'e}alisation}{33}
+\contentsline {section}{\numberline {4.1}Introduction}{34}
+\contentsline {section}{\numberline {4.2}Environnement Logiciel }{34}
+\contentsline {section}{\numberline {4.3}Technologies utilis\IeC {\'e}es }{34}
+\contentsline {section}{\numberline {4.4}Architecture de l\IeC {\textquoteright }application }{35}
+\contentsline {subsection}{\numberline {4.4.1}Client / Serveur }{35}
+\contentsline {subsection}{\numberline {4.4.2}Architecture MVC\IeC {\nobreakspace }}{36}
+\contentsline {section}{\numberline {4.5}Interfaces du site web}{37}
+\contentsline {section}{\numberline {4.6}Conclusion}{57}
+\contentsline {chapter}{Webographie}{58}
+\contentsline {chapter}{Conclusion g\IeC {\'e}n\IeC {\'e}rale}{59}

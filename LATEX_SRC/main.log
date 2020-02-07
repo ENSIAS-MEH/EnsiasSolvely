@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.7.25)  7 FEB 2020 05:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.7.25)  7 FEB 2020 10:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1154,50 +1154,50 @@ Overfull \hbox (56.40828pt too wide) in paragraph at lines 882--883
  [] 
  []
 
-[56 <./aboutus.png>] [57]
-Overfull \hbox (20.9967pt too wide) in paragraph at lines 893--894
+[56 <./aboutus.png>] [57] [58
+
+]
+Overfull \hbox (20.9967pt too wide) in paragraph at lines 902--903
 []\T1/ppl/m/n/12 [1] https ://openclassrooms.com/fr/courses/626954-creez-votre-
 application-web-avec-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 893--894
+Underfull \hbox (badness 10000) in paragraph at lines 902--903
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 895--896
+Underfull \hbox (badness 10000) in paragraph at lines 904--905
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 897--898
+Underfull \hbox (badness 10000) in paragraph at lines 906--907
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 899--900
+Underfull \hbox (badness 10000) in paragraph at lines 908--909
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 901--902
+Underfull \hbox (badness 10000) in paragraph at lines 910--911
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 903--904
+Underfull \hbox (badness 10000) in paragraph at lines 912--913
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 905--906
+Underfull \hbox (badness 10000) in paragraph at lines 914--915
 
  []
 
-[58
 
-] 
 AED: lastpage setting LastPage
 [59
 
@@ -1215,7 +1215,7 @@ r/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (60 pages, 5442023 bytes).
+Output written on main.pdf (60 pages, 5442047 bytes).
 PDF statistics:
  284 PDF objects out of 1000 (max. 8388607)
  148 compressed objects within 2 object streams

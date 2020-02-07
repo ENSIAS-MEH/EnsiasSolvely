@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Created with Jaspersoft Studio version 6.10.0.final using JasperReports Library version 6.10.0-unknown  -->
+<!-- Created with Jaspersoft Studio version 6.11.0.final using JasperReports Library version 6.11.0-0c4056ccaa4d25a5a8c45672d2f764ea3498bebb  -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ProblemeListe" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="992d33ec-18d0-43b5-abea-f1c944a74574">
 	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter (2)"/>
@@ -120,6 +120,7 @@
 			<groupExpression><![CDATA[$F{id_type}]]></groupExpression>
 		</group>
 	</subDataset>
+	<parameter name="imgPath" class="java.lang.String"/>
 	<queryString language="SQL">
 		<![CDATA[select * from  ensiassolvely.probleme]]>
 	</queryString>
@@ -210,7 +211,7 @@
 			</line>
 			<image>
 				<reportElement x="20" y="20" width="120" height="110" uuid="70196d6c-7a43-458b-9175-375a9499cc22"/>
-				<imageExpression><![CDATA["C:\\Users\\TOSHIBA\\eclipse-workspace\\EnsiasSolvely\\WebContent\\images\\ensias.png"]]></imageExpression>
+				<imageExpression><![CDATA[$P{imgPath}]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="30" y="270" width="544" height="30" uuid="0cb9d725-6ca9-4d15-9e85-0d61e5232973"/>

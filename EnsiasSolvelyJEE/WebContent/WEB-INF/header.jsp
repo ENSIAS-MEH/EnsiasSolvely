@@ -92,7 +92,7 @@
 		if(admin != 1 && admin != 2){
 			document.getElementById("Students").style.display ='none';
 			document.getElementById("Statistics").style.display = 'none';
-			document.getElementById("circle").style.marginLeft = "80% !important";
+			document.getElementById("circle").style.marginLeft = "40%";
 		}
 </script>
         

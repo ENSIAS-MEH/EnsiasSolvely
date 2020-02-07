@@ -10,40 +10,20 @@
 	</head>
 	<body>
 		<%@ include file="header.jsp" %>
-		<section id="imageSlider0">
+		<section id="main-image">
              <div class="wrapper">
-                <h2>Do you have problems while living in ENSIAS?<br></h2>
+                <h2>Do you have any problems while living in ENSIAS?<br></h2>
                 <h1><strong>You can declare now</strong></h1>
                 <a href="#" id="ok1" class="button-1" onclick="FromHere()">From Here</a>
              </div>
         </section>
-        <section id="imageSlider1" style="display: none;">
-             <div class="wrapper">
-                <h2>Do you have problems while living in ENSIAS?<br></h2>
-                <h1><strong>You can declare now</strong></h1>
-                <a href="#" id="ok2" class="button-1" onclick="FromHere()">From Here</a>
-             </div>
-        </section>
-        <section id="imageSlider2" style="display: none;">
-             <div class="wrapper">
-                <h2>Do you have problems while living in ENSIAS?<br></h2>
-                <h1><strong>You can declare now</strong></h1>
-                <a href="#" id="ok3" class="button-1" onclick="FromHere()">From Here</a>
-             </div>
-        </section>
-        <section id="imageSlider3" style="display: none;">
-             <div class="wrapper">
-                <h2>Do you have problems while living in ENSIAS?<br></h2>
-                <h1><strong>You can declare now</strong></h1>
-                <a href="#" id="ok4" class="button-1" onclick="FromHere()">From Here</a>
-             </div>
-        </section>
+     
         <section id="steps">
              <div class="wrapper">
                 <ul>
                     <li id="step-1">
                         <h4>Having a problem?</h4>
-                        <p>Do you have some problems while living in ENSIAS, such as WiFi, materiel, water or others ?</p>
+                        <p>Do you have some problems while living in ENSIAS, such as WiFi, electricity, water or others ?</p>
                     </li>
                     <li id="step-2">
                         <h4>Declare</h4>
@@ -61,7 +41,7 @@
         <section id="contact">
              <div class="wrapper">
                  <h3>CONTACT US</h3>
-                 <p>If you have some problems while navigating in our website, or if you have other issues,<br> you can contact us by entering your name, your email and send a description.</p>
+                 <p>If you have some problems while navigating in our web-site, or if you have other issues,<br> you can contact us by entering your name, your email and send a description.</p>
                  <form>
                     <label for="name">Name</label>
                     <input type="text" id="name" placeholder="Your name" required>
@@ -98,24 +78,6 @@
 				alert(erreur);	
 			}
 		</script>	
-		<script>
-			var index = 0;
-			changeImages();
-			
-			function changeImages(){
-				index = index % 4;
-				//pat = "images/" + index + ".jpg";
-				//var path = "url("+ pat + ") no-repeat center;";
-				for(var i = 0; i < 4; i++){
-					var image = document.getElementById("imageSlider" + i);
-					if(i == index) image.style.display = "block";
-					else image.style.display = "none";
-				}
-				//console.log(pat);
-				index++;
-				setTimeout(changeImages, 5000); 
-			}
-		</script>
 		
 		<script>
             // If user clicks anywhere outside of the modal, Modal will close
@@ -134,15 +96,9 @@
         	var action = "${empty action?'':action}";
         	if(action == "HomeS"){
         		document.getElementById('ok1').href = "#";
-        		document.getElementById('ok2').href = "#";
-        		document.getElementById('ok3').href = "#";
-        		document.getElementById('ok4').href = "#";
             	document.getElementById('modal-wrapper').style.display='block';
         	}else{
         		document.getElementById('ok1').href = "Declare";
-        		document.getElementById('ok2').href = "Declare";
-        		document.getElementById('ok3').href = "Declare";
-        		document.getElementById('ok4').href = "Declare";
         	}
         	}
         </script>

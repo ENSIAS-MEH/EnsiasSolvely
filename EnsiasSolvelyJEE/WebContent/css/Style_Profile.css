@@ -1,150 +1,150 @@
 [readonly='readonly'] {
-   pointer-events: none;
-   background-color:#dedec8;
+  pointer-events: none;
+  background-color:#dedec8;
 }
 img{
-	width:100%;
+ width:100%;
 }
 
 .table thead th {
-    vertical-align: middle;
-    border-bottom: 2px solid #dee2e6;
+   vertical-align: middle;
+   border-bottom: 2px solid #dee2e6;
 }
 
 input, table select {
-    font-size: 13px;
-    border: 2px solid #ddd;
-    border-radius: 5px;
-    outline: none;
-    height: 30px;
+   font-size: 13px;
+   border: 2px solid #ddd;
+   border-radius: 5px;
+   outline: none;
+   height: 30px;
 }
 
 
 
 .table td {
-	width: 20px;
+ width: 20px;
 }
 
 th {
-	padding: 0;
-	width:25%;
-	background-color:#EFEFEF;
+ padding: 0;
+ width:25%;
+ background-color:#EFEFEF;
 }
 
 .sec1,.sec3{
-	margin:0 auto;
-	text-align:center;
-	padding:15px;
+ margin:0 auto;
+ text-align:center;
+ padding:15px;
 }
 .sec2,.sec4{
-	width:60%;
-	margin:0 auto;
-	font-size:13px;
-	padding-bottom:80px;
-	text-align:center;
+ width:60%;
+ margin:0 auto;
+ font-size:13px;
+ padding-bottom:80px;
+ text-align:center;
 }
 table input, table select{
-	float:center;
-	width:100%;
-	text-align:left;
+ float:center;
+ width:100%;
+ text-align:left;
 }
 
 body {font-family: Arial, Helvetica, sans-serif;}
 
 /* The Modal (background) */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+ display: none; /* Hidden by default */
+ position: fixed; /* Stay in place */
+ z-index: 1; /* Sit on top */
+ padding-top: 100px; /* Location of the box */
+ left: 0;
+ top: 0;
+ width: 100%; /* Full width */
+ height: 100%; /* Full height */
+ overflow: auto; /* Enable scroll if needed */
+ background-color: rgb(0,0,0); /* Fallback color */
+ background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
 /* Modal Content */
 .modal-content {
-  background-color: #fefefe;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
+ background-color: #fefefe;
+ margin: auto;
+ padding: 20px;
+ border: 1px solid #888;
+ width: 80%;
 }
 
 /* The Close Button */
 .close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
+ color: #aaaaaa;
+ float: right;
+ font-size: 28px;
+ font-weight: bold;
 }
 
 .close:hover, .close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
+ color: #000;
+ text-decoration: none;
+ cursor: pointer;
 }
 
 .table-bordered {
-	width: 70%;
-	margin: auto auto;
+ width: 70%;
+ margin: auto auto;
 }
 
 .table td {
-	width: 70%;
+ width: 70%;
 }
 
 h4 {
-	margin-top: 30px;
-	margin-bottom: 20px;
+ margin-top: 30px;
+ margin-bottom: 20px;
 }
 
 #PassAffich {
-	width: 7%;
+ width: 7%;
 }
 
 
 input:hover {
-    border: 2px solid #02b8dd;
+   border: 2px solid #02b8dd;
 }
 
 select:hover {
-    border: 2px solid #02b8dd;
+   border: 2px solid #02b8dd;
 }
 
 input:focus{
-    border: 1px solid #02b8dd;
-    border-radius: 5px;
+   border: 1px solid #02b8dd;
+   border-radius: 5px;
 }
 
 select:focus{
-    border: 1px solid #02b8dd;
-    border-radius: 5px;
+   border: 1px solid #02b8dd;
+   border-radius: 5px;
 }
 
 .button-3 {
-    color: #fff;
-    font-size: 20px;
-    padding: 11px;
-    width: 120px;
-    height: 40px;
-    line-height: 5px;
-    background-color: #de0f0f;
-    border-style: none;
-    border-radius: 20px;
-    margin: 30px auto 0 auto;
+   color: #fff;
+   font-size: 20px;
+   padding: 11px;
+   width: 120px;
+   height: 40px;
+   line-height: 5px;
+   background-color: #de0f0f;
+   border-style: none;
+   border-radius: 20px;
+   margin: 30px auto 0 auto;
 }
 
 .button-3:hover {
-	background-color: #000;
+ background-color: #000;
 }
 
 .passwd_div {
-	display: inline-grid;
+ display: inline-grid;
 }
 
 

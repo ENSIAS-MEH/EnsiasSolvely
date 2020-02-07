@@ -62,7 +62,8 @@ a {
 
 #main-image {
     height: 580px;
-    background: url("../images/bg03.jpg") no-repeat center;
+    width: 100%;
+    background: url("../images/background.jpg") no-repeat center;
 }
 
 #main-image h2 {
@@ -72,7 +73,7 @@ a {
     text-transform: uppercase;
     text-align: center;
     padding: 90px 0 20px 0;
-    color: #000;
+    color: #fff;
     font-size: 35px;
     margin: 0 auto 20px auto;
     border-bottom: 1px solid #DE0F0F
@@ -80,12 +81,12 @@ a {
 
 #main-image p {
     margin: auto;
-    margin-top: 50px;
+    margin-top: 60px;
     text-align: center;
     font-size: 30px;
     line-height: 35px;
     width: 850px;
-    color: rgb(37, 37, 37);
+    color: #fff;
 }
 
 
@@ -141,7 +142,7 @@ input[type="text"]:hover {
     width: 120px !important;
     height: 40px;
     line-height: 5px;
-    background-color: #de0f0f;
+    background-color: #9a0a0a;
     border-style: none;
     border-radius: 20px;
     margin: 30px auto 20px auto !important;

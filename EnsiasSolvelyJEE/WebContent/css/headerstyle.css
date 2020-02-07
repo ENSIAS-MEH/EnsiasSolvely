@@ -9,11 +9,11 @@
 }
 
 #navbarNavAltMarkup {
-	background-color: #de0f0f;
+	background-color: #9a0a0a;
 }
 
 .bg-light {
-    background-color: #de0f0f !important;
+    background-color: #9a0a0a !important;
 }
 
 .nav-item {
@@ -108,7 +108,7 @@
     width: 120px;
     height: 40px;
     line-height: 5px;
-    background-color: #de0f0f;
+    background-color: #9a0a0a;
     border-style: none;
     border-radius: 20px;
     margin: 10px auto 0 auto;
@@ -129,8 +129,8 @@ h2 {
 
 
 #Profile:hover {
-	background-color: #de0f0f !important;
-	color: black !important;
+	background-color: #9a0a0a !important;
+	color: lightgreen !important;
 }
 
 #imgLogout {
@@ -154,7 +154,7 @@ h2 {
 }
 
 #circle {
-	margin-left: 30% !important;
+	margin-left: 30%;
 	margin-top: 15px;
     width: 10px;
     height: 10px;

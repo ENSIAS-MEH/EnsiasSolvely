@@ -49,11 +49,16 @@ fieldset {
 #contact input[type="email"]:hover,
 #contact input[type="tel"]:hover,
 #contact input[type="url"]:hover,
-#contact textarea:hover {
-  -webkit-transition: border-color 0.3s ease-in-out;
-  -moz-transition: border-color 0.3s ease-in-out;
-  transition: border-color 0.3s ease-in-out;
-  border: 1px solid #aaa;
+#contact fieldset textarea:hover {
+  border: 1px solid #02b8dd;
+}
+
+#contact input[type="text"]:focus ,
+#contact input[type="email"]:focus,
+#contact input[type="tel"]:focus ,
+#contact input[type="url"]:focus,
+#contact fieldset textarea:focus {
+  border: 1px solid #000;
 }
 
 #contact textarea {
@@ -66,7 +71,7 @@ fieldset {
   cursor: pointer;
   width: 30%;
   border: none;
-  background: #de0f0f;
+  background: #9a0a0a;
   color: #FFF;
   padding: 10px;
   font-size: 15px;

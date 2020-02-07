@@ -5,7 +5,7 @@
 	margin: 20px 10px;
 	text-decoration: none !important;
     font-size: 15px;
-    background-color: #de0f0f;
+    background-color: #9a0a0a;
     height: 25px;
     width: 100px;
     text-align: center;
@@ -55,7 +55,7 @@ section form {
     width: 30%;
     height: 28px;
 	padding-bottom: 4px;
-    background-color: #de0f0f;
+    background-color: #9a0a0a;
     border-style: none;
     border-radius: 20px;
     margin-left: 15px;
@@ -79,4 +79,13 @@ form input[name="studentNumber"] {
 	margin-left: 0;
 	margin-right: 20px;
 	text-align: center;
+}
+
+#btn-modify {
+	text-decoration: none !important;
+	color: #9a0a0a;
+}
+
+#btn-modify:hover {
+	color: black;
 }

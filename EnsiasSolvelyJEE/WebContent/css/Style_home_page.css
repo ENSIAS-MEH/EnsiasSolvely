@@ -80,31 +80,14 @@ a {
 
 /* MAIN IMAGE */
 
-#imageSlider0 {
+#main-image {
     height: 580px;
     width: 100%;
-    background: url("../images/1.jpg") no-repeat center;
+    background: url("../images/background.jpg") no-repeat center;
 }
 
-#imageSlider1 {
-    height: 580px;
-    width: 100%;
-    background: url("../images/2.jpg") no-repeat center;
-}
 
-#imageSlider2 {
-    height: 580px;
-    width: 100%;
-    background: url("../images/3.jpg") no-repeat center;
-}
-
-#imageSlider3 {
-    height: 580px;
-    width: 100%;
-    background: url("../images/6.jpg") no-repeat center;
-}
-
-#imageSlider0 h2, #imageSlider1 h2, #imageSlider2 h2, #imageSlider3 h2 {
+#main-image h2{
     font-weight: normal;
     font-weight: bold;
     text-transform: uppercase;
@@ -114,7 +97,7 @@ a {
     font-size: 30px;
 }
 
-#imageSlider0 h1, #imageSlider1 h1, #imageSlider2 h1, #imageSlider3 h1 {
+#main-image h1{
     text-align: center;
     margin-bottom: 15px;
     margin-top: 20px;
@@ -128,7 +111,7 @@ a {
     display: block;
     width: 150px;
     height: 50px;
-    background: #de0f0f;
+    background: #9a0a0a;
     color: #fff;
     font-size: 20px;
     margin: 0 auto;
@@ -239,7 +222,7 @@ input[type="text"]:hover, input[type="password"]:hover {
     width: 120px;
     height: 40px;
     line-height: 5px;
-    background-color: #de0f0f;
+    background-color: #9a0a0a;
     border-style: none;
     border-radius: 20px;
     margin: 30px auto 0 auto;

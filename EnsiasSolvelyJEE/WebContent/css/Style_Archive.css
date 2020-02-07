@@ -125,18 +125,6 @@ button {
 	text-align: center;
 }
 
-#totalAbsence {
-	font-size: 15px;
-	padding: 5px;
-	border-radius: 5px;
-	color: white;
-	background-color: #d2d2d2;
-	float: left;
-	margin: 10px;
-	position: absolute;
-	left: 0;
-	color: black;
-}
 
 input {
 	float: right;
@@ -165,7 +153,7 @@ input[type="submit"]:hover {
     width: 120px;
     height: 40px;
     line-height: 5px;
-    background-color: #de0f0f;
+    background-color: #9a0a0a;
     border-style: none;
     border-radius: 20px;
     margin: 10px auto 0 auto;
@@ -191,7 +179,7 @@ th {
 	margin: 20px 10px;
 	text-decoration: none !important;
     font-size: 15px;
-    background-color: #de0f0f;
+    background-color: #9a0a0a;
     height: 25px;
     width: 100px;
     text-align: center;

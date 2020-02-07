@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  mer. 22 jan. 2020 à 21:42
+-- Généré le :  ven. 07 fév. 2020 à 01:05
 -- Version du serveur :  5.5.16
 -- Version de PHP :  7.2.18
 
@@ -21,6 +21,20 @@ SET time_zone = "+00:00";
 --
 -- Base de données :  `ensiassolvely`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `aimer`
+--
+
+DROP TABLE IF EXISTS `aimer`;
+CREATE TABLE IF NOT EXISTS `aimer` (
+  `id_probleme` int(11) NOT NULL,
+  `numEleve` int(11) NOT NULL,
+  PRIMARY KEY (`id_probleme`,`numEleve`),
+  KEY `Aimer_Eleve_FK` (`numEleve`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -48,7 +62,7 @@ CREATE TABLE IF NOT EXISTS `comite` (
   `id_comite` int(11) NOT NULL AUTO_INCREMENT,
   `nom_comite` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`id_comite`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 
 --
 -- Déchargement des données de la table `comite`
@@ -56,7 +70,8 @@ CREATE TABLE IF NOT EXISTS `comite` (
 
 INSERT INTO `comite` (`id_comite`, `nom_comite`) VALUES
 (1, 'batiment'),
-(2, 'divers');
+(2, 'divers'),
+(3, 'Eleve');
 
 -- --------------------------------------------------------
 
@@ -77,7 +92,17 @@ CREATE TABLE IF NOT EXISTS `eleve` (
   `id_comite` int(11) DEFAULT NULL,
   PRIMARY KEY (`numEleve`),
   KEY `Eleve_Comite_FK` (`id_comite`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
+
+--
+-- Déchargement des données de la table `eleve`
+--
+
+INSERT INTO `eleve` (`numEleve`, `nom`, `prenom`, `email`, `telephone`, `chambre`, `login`, `motDePasse`, `id_comite`) VALUES
+(5, 'SAOUDI', 'Mehdi', 'mehdisaoudi270@gmail.com', '0618880918', 'B56', 'Mehdi', 'Saoudi', 1),
+(6, 'ZANATI', 'Zakaria', 'zakariazanati@gmail.com', '0656852145', 'C50', 'Zakaria', 'zanati', 3),
+(7, 'TENNIA', 'Youssef', 'tenniayoussef@gmail.com', '0623541236', 'C42', 'Youssef', 'Tennia', 2),
+(8, 'YOUNESS', 'Mouad', 'younessmouad@gmail.com', '0632541269', 'C58', 'Mouad', 'Youness', 2);
 
 -- --------------------------------------------------------
 
@@ -95,11 +120,23 @@ CREATE TABLE IF NOT EXISTS `probleme` (
   `id_comite` int(11) NOT NULL,
   `numEleve` int(11) NOT NULL,
   `id_type` int(11) NOT NULL,
+  `likes` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id_probleme`),
   KEY `Probleme_Comite_FK` (`id_comite`),
   KEY `Probleme_Eleve0_FK` (`numEleve`),
   KEY `Probleme_Type_Probleme1_FK` (`id_type`)
-) ENGINE=InnoDB AUTO_INCREMENT=31 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=41 DEFAULT CHARSET=latin1;
+
+--
+-- Déchargement des données de la table `probleme`
+--
+
+INSERT INTO `probleme` (`id_probleme`, `lieu`, `description`, `date_demande`, `statut`, `id_comite`, `numEleve`, `id_type`, `likes`) VALUES
+(36, 'Chambre B54', 'Fuite d\'eau', '2020-02-02', 'Actif', 1, 6, 2, 0),
+(37, 'Cuisine Batiment A', 'Problème d\'hygiène', '2020-02-02', 'Solved', 1, 7, 1, 0),
+(38, 'Terrain de foot ', 'Terrain de foot occupé depuis plus de 3 heures', '2020-02-02', 'Not Solved', 2, 6, 5, 0),
+(39, 'Terrain de basketball', 'Pas de panneau depuis 2 mois', '2020-02-02', 'Solved', 2, 7, 5, 0),
+(40, 'Grand amphi', 'Problème d\'éclairage', '2020-02-02', 'Solved', 2, 5, 6, 0);
 
 -- --------------------------------------------------------
 
@@ -129,6 +166,13 @@ INSERT INTO `type_probleme` (`id_type`, `libelle_type`) VALUES
 --
 -- Contraintes pour les tables déchargées
 --
+
+--
+-- Contraintes pour la table `aimer`
+--
+ALTER TABLE `aimer`
+  ADD CONSTRAINT `Aimer_Eleve_FK` FOREIGN KEY (`numEleve`) REFERENCES `eleve` (`numEleve`),
+  ADD CONSTRAINT `Aimer_Probleme_FK` FOREIGN KEY (`id_probleme`) REFERENCES `probleme` (`id_probleme`);
 
 --
 -- Contraintes pour la table `boite`

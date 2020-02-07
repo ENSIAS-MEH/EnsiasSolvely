@@ -15,7 +15,7 @@
              <div class="wrapper">
                 <h2>About Us</h2>
                 <p>
-                    ProSolvely is a website dedicated to engineering students of the National School of Computer Science and Systems Analysis.
+                    EnsiasSolvely is a web-site dedicated to engineering students of the National School of Computer Science and Systems Analysis.
                     It allows to declare the problems encountered in the student residence of ENSIAS.
                     Students can also see the progress of the solutions offered by the responsible committees.
                 </p>
@@ -25,7 +25,7 @@
         <section id="contact">
              <div class="wrapper">
                  <h3>CONTACT US</h3>
-                 <p>If you have some problems while navigating in our website, or if you have other issues,<br> you can contact us by entering your name, your email and send a description.</p>
+                 <p>If you have some problems while navigating in our web-site, or if you have other issues,<br> you can contact us by entering your name, your email and send a description.</p>
                  <form>
                     <label for="name">Name</label>
                     <input type="text" id="name" placeholder="Your name" required>

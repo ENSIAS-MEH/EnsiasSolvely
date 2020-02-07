@@ -23,10 +23,11 @@
 					</div>
 					<div class=" ">
 						<input type="email" class="form-control" id="inputEmail" name="email" placeholder="Email" required>
-						<input style="float: right;" pattern="[0-9]{9}" class="form-control" id="inputPhone" name="telephone" placeholder="Phone" required>
+						<input  pattern="[0-9]{9}" class="form-control" id="inputPhone" name="telephone" placeholder="Phone" required>
+	
 					</div>
 					<div class=" ">
-						<input style="float: right;" class="form-control" id="inputRoom" name="chambre" placeholder="Room" required>
+						<input  class="form-control" id="inputRoom" name="chambre" placeholder="Room" required>
 						<select id="inputCommittee" class="form-control" name="id_comite" required>
 							<option value="" disabled selected hidden>Committee</option>
 							<option value="1">Batiment</option>

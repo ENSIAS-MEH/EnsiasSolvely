@@ -11,6 +11,7 @@ import javax.servlet.http.HttpSession;
 import com.EnsiasSolvely.BeanForm.EleveBEAN;
 import com.EnsiasSolvely.BeanForm.ProblemsBEAN;
 import com.EnsiasSolvely.BeanForm.ProblemsForm;
+import com.EnsiasSolvely.BeanForm.SettingsForm;
 import com.EnsiasSolvely.DAO.ProblemsDAO;
 
 /**
@@ -35,7 +36,9 @@ public class ProblemsS extends HttpServlet {
 		HttpSession session = request.getSession();
         EleveBEAN eleve = (EleveBEAN) session.getAttribute("eleve");
 		ProblemsBEAN[] problems = ProblemsDAO.getActifProblems(eleve.getId_comite());
+		ProblemsBEAN[] problemsLiked = ProblemsDAO.getLikedProblems(eleve.getNumeleve());
 		request.setAttribute("problems", problems);
+		request.setAttribute("problemsLiked", problemsLiked);
 		this.getServletContext().getRequestDispatcher("/WEB-INF/Problems.jsp").forward(request, response);
 	}
 
@@ -44,8 +47,16 @@ public class ProblemsS extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		ProblemsForm problemsForm = new ProblemsForm();
-		
-		problemsForm.changeStatut(request);
+		SettingsForm settings = new SettingsForm();
+		if(settings.getValeurChamp(request, "id_problem")!=null) {
+			problemsForm.changeStatut(request);
+		}
+		else {
+			if(!problemsForm.checkLike(request)) {
+				problemsForm.incrementLikes(request);
+				problemsForm.addLike(request);
+			}
+		}
 		if(!problemsForm.settings.getErreurs().isEmpty()) {
 			request.setAttribute("form", problemsForm.settings);
 		}

@@ -31,13 +31,20 @@ public class HomeS extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		HttpSession session = request.getSession();
+        EleveBEAN eleve = (EleveBEAN) session.getAttribute("eleve");
 		int con = -1;
 		if(request.getParameter("con")!=null) {
 			con = Integer.parseInt(request.getParameter("con"));
 		}
 		if(con==0) {
-			HttpSession session = request.getSession();
 			session.setAttribute("eleve", null);
+		}
+		eleve = (EleveBEAN) session.getAttribute("eleve");
+		if(eleve!=null) {
+    		request.setAttribute("action","DeclareS");
+		}else {
+    		request.setAttribute("action","HomeS");
 		}
 		this.getServletContext().getRequestDispatcher("/WEB-INF/Home.jsp").forward(request, response);
 	}
@@ -58,8 +65,6 @@ public class HomeS extends HttpServlet {
         if ( eleveForm.settings.getErreurs().isEmpty() ) {
             session.setAttribute( "eleve", eleve );
     		request.setAttribute("eleve",eleve);
-  
-    		
             path = "/WEB-INF/Home.jsp";
         } else {
             session.setAttribute( "eleve", null );

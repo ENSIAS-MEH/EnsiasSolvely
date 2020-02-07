@@ -44,7 +44,7 @@ public class ArchiveS extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		request.setCharacterEncoding("UTF-8");
+		/*request.setCharacterEncoding("UTF-8");
 		response.setCharacterEncoding("UTF-8");
 		SettingsForm settings = new SettingsForm();
 		SimpleDateFormat formatter2=new SimpleDateFormat("yyyy-MM-dd");  
@@ -52,7 +52,7 @@ public class ArchiveS extends HttpServlet {
 		try {
 			Date problemDate = formatter2.parse(settings.getValeurChamp(request, "date_demande"));
 			problem =  new ProblemsBEAN(Integer.parseInt(settings.getValeurChamp(request,"id_probleme")), settings.getValeurChamp(request,"lieu"), settings.getValeurChamp(request,"description"), problemDate, settings.getValeurChamp(request,"statut"), settings.getValeurChamp(request,"nom"),
-					settings.getValeurChamp(request,"prenom"), settings.getValeurChamp(request,"nom_comite"), settings.getValeurChamp(request,"libelle_type"));
+					settings.getValeurChamp(request,"prenom"), settings.getValeurChamp(request,"nom_comite"), settings.getValeurChamp(request,"libelle_type"), settings.getValeurChamp(request, "likes"));
 			
 		} catch (NumberFormatException | ParseException e) {
 			// TODO Auto-generated catch block
@@ -60,7 +60,7 @@ public class ArchiveS extends HttpServlet {
 		}
 		if(settings.getValeurChamp(request, "statut").toString().contains("Solved")) {
 			request.setAttribute("printable", problem);
-		}
+		}*/
 		doGet(request, response);
 	}
 

@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Created with Jaspersoft Studio version 6.10.0.final using JasperReports Library version 6.10.0-unknown  -->
+<!-- Created with Jaspersoft Studio version 6.11.0.final using JasperReports Library version 6.11.0-0c4056ccaa4d25a5a8c45672d2f764ea3498bebb  -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="EtudiantQR" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="41e0ddf6-209b-4aba-9ee4-a593af63d347">
 	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter (2)"/>
+	<parameter name="imgPath" class="java.lang.String"/>
 	<queryString language="SQL">
 		<![CDATA[select * from  ensiassolvely.eleve]]>
 	</queryString>
@@ -97,7 +98,7 @@
 			</textField>
 			<image>
 				<reportElement x="20" y="10" width="120" height="110" uuid="9c074f58-2afd-4b2c-a703-55e01ec186e2"/>
-				<imageExpression><![CDATA["C:\\Users\\TOSHIBA\\eclipse-workspace\\EnsiasSolvely\\WebContent\\images\\ensias.png"]]></imageExpression>
+				<imageExpression><![CDATA[$P{imgPath}]]></imageExpression>
 			</image>
 		</band>
 	</title>

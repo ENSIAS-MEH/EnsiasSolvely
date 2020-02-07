@@ -18,7 +18,7 @@
 		<h4 style="text-align: center; padding-top: 20px; padding-bottom: 15px;">List of Students</h4>
 		<nav>
 			<section class="table-responsive" id="foncSec2">
-				<form method="post" action="StudentsS">
+				<form method="post" action="StudentsS" style="display: flex;">
 						<input type="number" name="Student_number" placeholder="Student number" min="1" style="float: left; border-radius: 15px; margin-left: 0;" required/>
 						<input type="submit" id="search" value="Search">
 				</form>
@@ -51,7 +51,7 @@
 										<td>${item.login}</td>
 										<td>${item.motdepasse}</td>
 										<td>
-											<a href="Profile?numEleve=${item.numeleve}" style="text-decoration:none;">Modify</a>
+											<a id="btn-modify" href="Profile?numEleve=${item.numeleve}">Modify</a>
 										</td>
 									</tr>
 								</c:if>
@@ -63,15 +63,5 @@
 		</nav>
 		
 		<%@ include file="footer.jsp" %>
-		<script>
-			var count = document.getElementById("myTable").rows.length;
-			if(count > 4) document.getElementById('footer').style["margin-top"] = "0";
-			else if(count == 3) document.getElementById('footer').style["margin-top"] = "52px";
-			else if(count == 4) document.getElementById('footer').style["margin-top"] = "8px";
-			else if(count == 1) document.getElementById('footer').style["margin-top"] = "144px";
-			else if(count == 2) document.getElementById('footer').style["margin-top"] = "104px";
-			else document.getElementById('footer').style["margin-top"] = "90px";
-
-		</script>
 	</body>
 </html>

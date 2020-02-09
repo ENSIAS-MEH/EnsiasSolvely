@@ -196,7 +196,7 @@ Le modèle en cascade est une version répandue du modèle de gestion du cycle d
 	
 	\begin{center}
 		\includegraphics[width=300pt,height=300pt]{cascade.png} 
-		\caption{Modèle en cascade}
+		\caption{Modèle en cascade [4]}
 	\end{center}
 	
 \end{figure}
@@ -229,7 +229,7 @@ Dans ce premier chapitre, nous avons essayé de donner une vision générale sur
 Avant de programmer le site web et se lancer dans l’écriture du code, il faut d’abord organiser les idées et les documenter, puis organiser la réalisation en définissant les modules et les étapes de la réalisation. Cette démarche s’appelle la modélisation, son produit est un module.
 
 \section{Langage de conception }
-Dans le cadre de notre projet nous avons utilisé le langage UML (Unified Modeling Language) [REF] pour la modélisation des différents diagrammes.
+Dans le cadre de notre projet nous avons utilisé le langage UML (Unified Modeling Language) [5] pour la modélisation des différents diagrammes.
 \subsection{Présentation d’UML }
 UML « Unified Modeling Language » : est un langage visuel constitué d’un ensemble des schémas, appelés diagrammes, qui donnent chacun une vision différente du projet à traiter.
 UML nous fournit donc des diagrammes pour représenter le logiciel à développer : son fonctionnement, sa mise en route, les actions susceptibles d’être effectuées par le logiciel, etc.
@@ -703,43 +703,50 @@ Nous avons donc codé notre site en mettant en place ce modèle :\\
 	\item [-] les servlets n'interviennent plus directement sur les données des requêtes, mais aiguillent simplement les requêtes entrantes. 
 	\item [-] Les JSP sont adaptées au modèle MVC.
 \end{itemize}
-\section{Interfaces du site web}
+\section{Interfaces de l'application}
+Dans cette partie on décrit les différents interfaces de notre application web.\\
+La page d'accueille est comme suit:\\
 \begin{figure}[h]
 	
 	\begin{center}
-		\includegraphics[width=500pt,height=350pt]{home.png} 
+		\includegraphics[width=500pt,height=300pt]{home.png} 
 		\caption{Page d'accueil}
 	\end{center}
 	
 \end{figure}
 \newpage
+L'utilisateur peut donc se connecter en cliquant sur 'Login' ou bien 'From Here'.\\
 \begin{figure}[h]
 	
 	\begin{center}
-		\includegraphics[width=500pt,height=350pt]{login.png} 
+		\includegraphics[width=500pt,height=300pt]{login.png} 
 		\caption{Fenêtre de login}
 	\end{center}
 	
 \end{figure}
 \newpage
+Si l'utilisateur est membre d'une comité, alors il se connecte en mode admin .\\
 \begin{figure}[h]
 	
 	\begin{center}
-		\includegraphics[width=500pt,height=350pt]{home-admin.png} 
+		\includegraphics[width=500pt,height=300pt]{home-admin.png} 
 		\caption{Interface de l'admin}
 	\end{center}
 	
 \end{figure}
 \newpage
+
+Un élève peut déclarer un problème en cliquant sur 'Declare' ou bien 'From Here'.\\
 \begin{figure}[h]
 	
 	\begin{center}
-		\includegraphics[width=500pt,height=350pt]{home-eleve.png} 
+		\includegraphics[width=500pt,height=300pt]{home-eleve.png} 
 		\caption{Interface de l'élève}
 	\end{center}
 	
 \end{figure}
 \newpage
+Il saisit en suite les détail de son problème puis il l'envoie.\\
 \begin{figure}[h]
 	
 	\begin{center}
@@ -749,19 +756,12 @@ Nous avons donc codé notre site en mettant en place ce modèle :\\
 	
 \end{figure}
 \newpage
+Tous les élèves ont le droit de consulter la liste de tous les problèmes déclaré.
+Un élève peut cliquer sur 'j'aime' s'il a le même problème qu'un autre élève qui l'a déjà déclaré, plus un problème a des "j'aime" plus il monte en haut et devient plus prioritaire. Avec cette fonction on évitera d'avoir plusieurs problèmes avec la même description.\\
 \begin{figure}[h]
 	
 	\begin{center}
-		\includegraphics[width=500pt,height=250pt]{problems-eleve.png} 
-		\caption{Liste des problèmes d'un élève}
-	\end{center}
-	
-\end{figure}
-\newpage
-\begin{figure}[h]
-	
-	\begin{center}
-		\includegraphics[width=500pt,height=350pt]{myproblems.png} 
+		\includegraphics[width=500pt,height=300pt]{problems-eleve.png} 
 		\caption{Liste des problèmes de tous les élèves}
 	\end{center}
 	
@@ -770,43 +770,57 @@ Nous avons donc codé notre site en mettant en place ce modèle :\\
 \begin{figure}[h]
 	
 	\begin{center}
-		\includegraphics[width=500pt,height=350pt]{profile.png} 
+		\includegraphics[width=500pt,height=300pt]{myproblems.png} 
+		\caption{Liste des problèmes d'un élève}
+	\end{center}
+	
+\end{figure}
+\newpage
+Chaque élève a le droit de modifier ses informations personnelles.\\
+\begin{figure}[h]
+	
+	\begin{center}
+		\includegraphics[width=500pt,height=300pt]{profile.png} 
 		\caption{Profil de l'élève}
 	\end{center}
 	
 \end{figure}
 \newpage
+Un admin peut changer l'état d'un problème en 'solved' ou bien 'not solved'.
 \begin{figure}[h]
 	
 	\begin{center}
-		\includegraphics[width=500pt,height=350pt]{problems-admin.png} 
+		\includegraphics[width=500pt,height=300pt]{problems-admin.png} 
 		\caption{Liste de tous les problèmes }
 	\end{center}
 	
 \end{figure}
 \newpage
+Il peut consulter les problèmes urgent en cliquant sur 'type'.\\
 \begin{figure}[h]
 	
 	\begin{center}
-		\includegraphics[width=500pt,height=350pt]{urgence.png} 
+		\includegraphics[width=500pt,height=300pt]{urgence.png} 
 		\caption{Liste des problèmes urgent}
 	\end{center}
 	
 \end{figure}
 \newpage
+Il peut aussi consulter l'archive de tous les problèmes déjà déclaré.\\
 \begin{figure}[h]
 	
 	\begin{center}
-		\includegraphics[width=500pt,height=350pt]{archive.png} 
+		\includegraphics[width=500pt,height=300pt]{archive.png} 
 		\caption{Page d'archive}
 	\end{center}
 	
 \end{figure}
 \newpage
+Il peut récupérer la liste des problèmes et la liste globale des étudiants.\\
 \begin{figure}[h]
 	
 	\begin{center}
-		\includegraphics[width=500pt,height=350pt]{listproblems.png} 
+		\includegraphics[width=500pt,height=400pt]{listproblems.png} 
 		\caption{Liste des problèmes de l'année en cours}
 	\end{center}
 	
@@ -815,25 +829,27 @@ Nous avons donc codé notre site en mettant en place ce modèle :\\
 \begin{figure}[h]
 	
 	\begin{center}
-		\includegraphics[width=500pt,height=350pt]{studentslist.png} 
+		\includegraphics[width=500pt,height=400pt]{studentslist.png} 
 		\caption{Liste des étudiants}
 	\end{center}
 	
 \end{figure}
 \newpage
+Chaque étudiant a un code qr généré automatiquement par l'application web pour s'authentifier.\\
 \begin{figure}[h]
 	
 	\begin{center}
-		\includegraphics[width=500pt,height=350pt]{studentsqr.png} 
+		\includegraphics[width=500pt,height=400pt]{studentsqr.png} 
 		\caption{Qr code des étudiants}
 	\end{center}
 	
 \end{figure}
 \newpage
+Quelques statistiques sur la distribution et la résolution des problèmes.\\ 
 \begin{figure}[h]
 	
 	\begin{center}
-		\includegraphics[width=500pt,height=350pt]{d1.png} 
+		\includegraphics[width=500pt,height=400pt]{d1.png} 
 		\caption{Distribution des problèmes de la comité bâtiments}
 	\end{center}
 	
@@ -843,7 +859,7 @@ Nous avons donc codé notre site en mettant en place ce modèle :\\
 \begin{figure}[h]
 	
 	\begin{center}
-		\includegraphics[width=500pt,height=350pt]{d3.png} 
+		\includegraphics[width=500pt,height=400pt]{d3.png} 
 		\caption{Distribution des problèmes de la comité divers}
 	\end{center}
 	
@@ -852,7 +868,7 @@ Nous avons donc codé notre site en mettant en place ce modèle :\\
 \begin{figure}[h]
 	
 	\begin{center}
-		\includegraphics[width=500pt,height=350pt]{d2.png} 
+		\includegraphics[width=500pt,height=400pt]{d2.png} 
 		\caption{Distribution des problèmes selon les comités }
 	\end{center}
 	
@@ -861,7 +877,7 @@ Nous avons donc codé notre site en mettant en place ce modèle :\\
 \begin{figure}[h]
 	
 	\begin{center}
-		\includegraphics[width=500pt,height=350pt]{sg.png} 
+		\includegraphics[width=500pt,height=400pt]{sg.png} 
 		\caption{Statistiques globales}
 	\end{center}
 	
@@ -870,7 +886,7 @@ Nous avons donc codé notre site en mettant en place ce modèle :\\
 \begin{figure}[h]
 	
 	\begin{center}
-		\includegraphics[width=500pt,height=350pt]{contactus.png} 
+		\includegraphics[width=500pt,height=300pt]{contactus.png} 
 		\caption{Page contact us}
 	\end{center}
 	
@@ -905,7 +921,7 @@ Notre application peut être aisément améliorée grâce à son aspect ouvert. 
 
 [3]    https://stackoverflow.com/ \\
 
-[4]    https://validator.w3.org/ \\
+[4]    https://www.supinfo.com/articles/single/3099-waterfall-model-modele-cascade \\
 
 [5]   http://www.uml-sysml.org/documentation \\
 

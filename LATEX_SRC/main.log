@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.7.25)  7 FEB 2020 10:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.7.25)  9 FEB 2020 14:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -799,7 +799,7 @@ File: Usecase.png Graphic file (type png)
 <use Usecase.png>
 Package pdftex.def Info: Usecase.png  used on input line 255.
 (pdftex.def)             Requested size: 400.00505pt x 400.00473pt.
-[16] [17 <./Usecase.png (PNG copy)>]
+[16] [17 <./Usecase.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 262--263
 
  []
@@ -823,7 +823,7 @@ Overfull \hbox (21.77592pt too wide) in paragraph at lines 384--413
  []
 
 [19] [20]
-<seq1.png, id=81, 578.91281pt x 521.69907pt>
+<seq1.png, id=82, 578.91281pt x 521.69907pt>
 File: seq1.png Graphic file (type png)
 <use seq1.png>
 Package pdftex.def Info: seq1.png  used on input line 423.
@@ -833,44 +833,44 @@ Underfull \hbox (badness 10000) in paragraph at lines 429--430
 
  []
 
-<seq2.png, id=86, 660.96938pt x 449.42906pt>
+<seq2.png, id=87, 660.96938pt x 449.42906pt>
 File: seq2.png Graphic file (type png)
 <use seq2.png>
 Package pdftex.def Info: seq2.png  used on input line 434.
 (pdftex.def)             Requested size: 400.01378pt x 400.01802pt.
 [22 <./seq2.png>]
-<seq3.png, id=91, 579.66562pt x 446.41782pt>
+<seq3.png, id=92, 579.66562pt x 446.41782pt>
 File: seq3.png Graphic file (type png)
 <use seq3.png>
 Package pdftex.def Info: seq3.png  used on input line 444.
 (pdftex.def)             Requested size: 400.00508pt x 400.00806pt.
  [23 <./seq3.png>]
-<seq4.png, id=96, 578.91281pt x 307.90031pt>
+<seq4.png, id=97, 578.91281pt x 307.90031pt>
 File: seq4.png Graphic file (type png)
 <use seq4.png>
 Package pdftex.def Info: seq4.png  used on input line 454.
 (pdftex.def)             Requested size: 399.99794pt x 400.03075pt.
  [24 <./seq4.png>]
-<seq5.png, id=102, 659.46375pt x 449.42906pt>
+<seq5.png, id=103, 659.46375pt x 449.42906pt>
 File: seq5.png Graphic file (type png)
 <use seq5.png>
 Package pdftex.def Info: seq5.png  used on input line 464.
 (pdftex.def)             Requested size: 400.00821pt x 400.01802pt.
  [25 <./seq5.png>]
-<seq6.png, id=107, 581.17125pt x 309.40594pt>
+<seq6.png, id=108, 581.17125pt x 309.40594pt>
 File: seq6.png Graphic file (type png)
 <use seq6.png>
 Package pdftex.def Info: seq6.png  used on input line 474.
 (pdftex.def)             Requested size: 400.00652pt x 400.03706pt.
 
 [26 <./seq6.png>]
-<seq7.png, id=112, 581.92406pt x 307.90031pt>
+<seq7.png, id=113, 581.92406pt x 307.90031pt>
 File: seq7.png Graphic file (type png)
 <use seq7.png>
 Package pdftex.def Info: seq7.png  used on input line 484.
 (pdftex.def)             Requested size: 400.00964pt x 400.03075pt.
  [27 <./seq7.png>]
-<etat_trans.png, id=117, 461.47406pt x 347.79938pt>
+<etat_trans.png, id=118, 461.47406pt x 347.79938pt>
 File: etat_trans.png Graphic file (type png)
 <use etat_trans.png>
 Package pdftex.def Info: etat_trans.png  used on input line 495.
@@ -884,7 +884,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 504--505
 
  []
 
-<class.png, id=125, 986.68625pt x 605.26125pt>
+<class.png, id=126, 986.68625pt x 605.26125pt>
 File: class.png Graphic file (type png)
 <use class.png>
 Package pdftex.def Info: class.png  used on input line 510.
@@ -899,7 +899,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 646--647
  []
 
 [34]
-<clientserveur.png, id=143, 1284.8pt x 548.0475pt>
+<clientserveur.png, id=144, 1284.8pt x 548.0475pt>
 File: clientserveur.png Graphic file (type png)
 <use clientserveur.png>
 Package pdftex.def Info: clientserveur.png  used on input line 667.
@@ -919,7 +919,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 683--684
 
  []
 
-<mvc.png, id=148, 788.9475pt x 276.03125pt>
+<mvc.png, id=149, 788.9475pt x 276.03125pt>
 File: mvc.png Graphic file (type png)
 <use mvc.png>
 Package pdftex.def Info: mvc.png  used on input line 693.
@@ -935,265 +935,271 @@ Overfull \hbox (29.72021pt too wide) in paragraph at lines 702--703
 -tion/conversion/validation
  []
 
-<home.png, id=153, 1330.9725pt x 629.35126pt>
+<home.png, id=154, 1330.9725pt x 629.35126pt>
 File: home.png Graphic file (type png)
 <use home.png>
-Package pdftex.def Info: home.png  used on input line 710.
-(pdftex.def)             Requested size: 499.98676pt x 349.9951pt.
+Package pdftex.def Info: home.png  used on input line 712.
+(pdftex.def)             Requested size: 499.98676pt x 300.0013pt.
 
-Overfull \hbox (56.40828pt too wide) in paragraph at lines 710--711
+Overfull \hbox (56.40828pt too wide) in paragraph at lines 712--713
  [] 
  []
 
 [37 <./home.png>]
-<login.png, id=158, 1330.9725pt x 629.35126pt>
+<login.png, id=159, 1330.9725pt x 629.35126pt>
 File: login.png Graphic file (type png)
 <use login.png>
-Package pdftex.def Info: login.png  used on input line 719.
-(pdftex.def)             Requested size: 499.98676pt x 349.9951pt.
+Package pdftex.def Info: login.png  used on input line 722.
+(pdftex.def)             Requested size: 499.98676pt x 300.0013pt.
 
-Overfull \hbox (56.40828pt too wide) in paragraph at lines 719--720
+Overfull \hbox (56.40828pt too wide) in paragraph at lines 722--723
  [] 
  []
 
 [38 <./login.png>]
-<home-admin.png, id=163, 1330.9725pt x 629.35126pt>
+<home-admin.png, id=164, 1330.9725pt x 629.35126pt>
 File: home-admin.png Graphic file (type png)
 <use home-admin.png>
-Package pdftex.def Info: home-admin.png  used on input line 728.
-(pdftex.def)             Requested size: 499.98676pt x 349.9951pt.
+Package pdftex.def Info: home-admin.png  used on input line 732.
+(pdftex.def)             Requested size: 499.98676pt x 300.0013pt.
 
-Overfull \hbox (56.40828pt too wide) in paragraph at lines 728--729
+Overfull \hbox (56.40828pt too wide) in paragraph at lines 732--733
  [] 
  []
 
 [39 <./home-admin.png>]
-<home-eleve.png, id=168, 1330.9725pt x 629.35126pt>
+<home-eleve.png, id=169, 1330.9725pt x 629.35126pt>
 File: home-eleve.png Graphic file (type png)
 <use home-eleve.png>
-Package pdftex.def Info: home-eleve.png  used on input line 737.
-(pdftex.def)             Requested size: 499.98676pt x 349.9951pt.
+Package pdftex.def Info: home-eleve.png  used on input line 743.
+(pdftex.def)             Requested size: 499.98676pt x 300.0013pt.
 
-Overfull \hbox (56.40828pt too wide) in paragraph at lines 737--738
+Overfull \hbox (56.40828pt too wide) in paragraph at lines 743--744
  [] 
  []
 
 [40 <./home-eleve.png>]
-<declare.png, id=173, 1330.9725pt x 629.35126pt>
+<declare.png, id=174, 1330.9725pt x 629.35126pt>
 File: declare.png Graphic file (type png)
 <use declare.png>
-Package pdftex.def Info: declare.png  used on input line 746.
+Package pdftex.def Info: declare.png  used on input line 753.
 (pdftex.def)             Requested size: 499.98676pt x 300.0013pt.
 
-Overfull \hbox (56.40828pt too wide) in paragraph at lines 746--747
+Overfull \hbox (56.40828pt too wide) in paragraph at lines 753--754
  [] 
  []
 
 [41 <./declare.png>]
-<problems-eleve.png, id=178, 1311.90125pt x 372.39125pt>
+<problems-eleve.png, id=179, 1311.90125pt x 372.39125pt>
 File: problems-eleve.png Graphic file (type png)
 <use problems-eleve.png>
-Package pdftex.def Info: problems-eleve.png  used on input line 755.
-(pdftex.def)             Requested size: 499.98897pt x 250.00655pt.
+Package pdftex.def Info: problems-eleve.png  used on input line 764.
+(pdftex.def)             Requested size: 499.98897pt x 300.01013pt.
 
-Overfull \hbox (56.41049pt too wide) in paragraph at lines 755--756
+Overfull \hbox (56.41049pt too wide) in paragraph at lines 764--765
  [] 
  []
 
 [42 <./problems-eleve.png>]
-<myproblems.png, id=184, 1310.8975pt x 404.51125pt>
+<myproblems.png, id=185, 1310.8975pt x 404.51125pt>
 File: myproblems.png Graphic file (type png)
 <use myproblems.png>
-Package pdftex.def Info: myproblems.png  used on input line 764.
-(pdftex.def)             Requested size: 500.00648pt x 350.00851pt.
+Package pdftex.def Info: myproblems.png  used on input line 773.
+(pdftex.def)             Requested size: 500.00648pt x 300.00641pt.
 
-Overfull \hbox (56.42801pt too wide) in paragraph at lines 764--765
+Overfull \hbox (56.42801pt too wide) in paragraph at lines 773--774
  [] 
  []
 
 [43 <./myproblems.png>]
-<profile.png, id=189, 1330.9725pt x 629.35126pt>
+<profile.png, id=190, 1330.9725pt x 629.35126pt>
 File: profile.png Graphic file (type png)
 <use profile.png>
-Package pdftex.def Info: profile.png  used on input line 773.
-(pdftex.def)             Requested size: 499.98676pt x 349.9951pt.
+Package pdftex.def Info: profile.png  used on input line 783.
+(pdftex.def)             Requested size: 499.98676pt x 300.0013pt.
 
-Overfull \hbox (56.40828pt too wide) in paragraph at lines 773--774
+Overfull \hbox (56.40828pt too wide) in paragraph at lines 783--784
  [] 
  []
 
 [44 <./profile.png>]
-<problems-admin.png, id=194, 1309.89375pt x 371.3875pt>
+<problems-admin.png, id=195, 1309.89375pt x 371.3875pt>
 File: problems-admin.png Graphic file (type png)
 <use problems-admin.png>
-Package pdftex.def Info: problems-admin.png  used on input line 782.
-(pdftex.def)             Requested size: 500.00339pt x 350.00533pt.
+Package pdftex.def Info: problems-admin.png  used on input line 793.
+(pdftex.def)             Requested size: 500.00339pt x 300.00618pt.
 
-Overfull \hbox (56.42491pt too wide) in paragraph at lines 782--783
+Overfull \hbox (56.42491pt too wide) in paragraph at lines 793--794
  [] 
  []
 
 [45 <./problems-admin.png>]
-<urgence.png, id=199, 1308.89pt x 391.4625pt>
+<urgence.png, id=200, 1308.89pt x 391.4625pt>
 File: urgence.png Graphic file (type png)
 <use urgence.png>
-Package pdftex.def Info: urgence.png  used on input line 791.
-(pdftex.def)             Requested size: 499.99971pt x 350.01926pt.
+Package pdftex.def Info: urgence.png  used on input line 803.
+(pdftex.def)             Requested size: 499.99971pt x 300.01736pt.
 
-Overfull \hbox (56.42123pt too wide) in paragraph at lines 791--792
+Overfull \hbox (56.42123pt too wide) in paragraph at lines 803--804
  [] 
  []
 
 [46 <./urgence.png>]
-<archive.png, id=204, 1330.9725pt x 629.35126pt>
+<archive.png, id=205, 1330.9725pt x 629.35126pt>
 File: archive.png Graphic file (type png)
 <use archive.png>
-Package pdftex.def Info: archive.png  used on input line 800.
-(pdftex.def)             Requested size: 499.98676pt x 349.9951pt.
+Package pdftex.def Info: archive.png  used on input line 813.
+(pdftex.def)             Requested size: 499.98676pt x 300.0013pt.
 
-Overfull \hbox (56.40828pt too wide) in paragraph at lines 800--801
+Overfull \hbox (56.40828pt too wide) in paragraph at lines 813--814
  [] 
  []
 
 [47 <./archive.png>]
-<listproblems.png, id=209, 633.36626pt x 607.26875pt>
+<listproblems.png, id=210, 633.36626pt x 607.26875pt>
 File: listproblems.png Graphic file (type png)
 <use listproblems.png>
-Package pdftex.def Info: listproblems.png  used on input line 809.
-(pdftex.def)             Requested size: 500.01561pt x 350.00151pt.
+Package pdftex.def Info: listproblems.png  used on input line 823.
+(pdftex.def)             Requested size: 500.01561pt x 400.01099pt.
 
-Overfull \hbox (56.43713pt too wide) in paragraph at lines 809--810
+Overfull \hbox (56.43713pt too wide) in paragraph at lines 823--824
  [] 
  []
 
 [48 <./listproblems.png>]
-<studentslist.png, id=215, 591.20876pt x 570.13pt>
+<studentslist.png, id=216, 591.20876pt x 570.13pt>
 File: studentslist.png Graphic file (type png)
 <use studentslist.png>
-Package pdftex.def Info: studentslist.png  used on input line 818.
-(pdftex.def)             Requested size: 500.01292pt x 349.99716pt.
+Package pdftex.def Info: studentslist.png  used on input line 832.
+(pdftex.def)             Requested size: 500.01292pt x 400.00172pt.
 
-Overfull \hbox (56.43445pt too wide) in paragraph at lines 818--819
+Overfull \hbox (56.43445pt too wide) in paragraph at lines 832--833
  [] 
  []
 
 [49 <./studentslist.png>]
-<studentsqr.png, id=221, 595.22375pt x 587.19376pt>
+<studentsqr.png, id=222, 595.22375pt x 587.19376pt>
 File: studentsqr.png Graphic file (type png)
 <use studentsqr.png>
-Package pdftex.def Info: studentsqr.png  used on input line 827.
-(pdftex.def)             Requested size: 500.00272pt x 349.99837pt.
+Package pdftex.def Info: studentsqr.png  used on input line 842.
+(pdftex.def)             Requested size: 500.00272pt x 400.00327pt.
 
-Overfull \hbox (56.42424pt too wide) in paragraph at lines 827--828
+Overfull \hbox (56.42424pt too wide) in paragraph at lines 842--843
  [] 
  []
 
 [50 <./studentsqr.png>]
-<d1.png, id=226, 638.385pt x 463.7325pt>
+<d1.png, id=227, 638.385pt x 463.7325pt>
 File: d1.png Graphic file (type png)
 <use d1.png>
-Package pdftex.def Info: d1.png  used on input line 836.
-(pdftex.def)             Requested size: 500.00337pt x 350.00621pt.
+Package pdftex.def Info: d1.png  used on input line 852.
+(pdftex.def)             Requested size: 500.00337pt x 400.00508pt.
 
-Overfull \hbox (56.4249pt too wide) in paragraph at lines 836--837
+Overfull \hbox (56.4249pt too wide) in paragraph at lines 852--853
  [] 
  []
 
 [51 <./d1.png>]
-<d3.png, id=231, 630.355pt x 501.875pt>
+<d3.png, id=232, 630.355pt x 501.875pt>
 File: d3.png Graphic file (type png)
 <use d3.png>
-Package pdftex.def Info: d3.png  used on input line 846.
-(pdftex.def)             Requested size: 500.00447pt x 350.0159pt.
+Package pdftex.def Info: d3.png  used on input line 862.
+(pdftex.def)             Requested size: 500.00447pt x 400.02254pt.
 
-Overfull \hbox (56.426pt too wide) in paragraph at lines 846--847
+Overfull \hbox (56.426pt too wide) in paragraph at lines 862--863
  [] 
  []
 
 [52 <./d3.png>]
-<d2.png, id=236, 634.37pt x 547.04375pt>
+<d2.png, id=237, 634.37pt x 547.04375pt>
 File: d2.png Graphic file (type png)
 <use d2.png>
-Package pdftex.def Info: d2.png  used on input line 855.
-(pdftex.def)             Requested size: 500.01428pt x 350.00664pt.
+Package pdftex.def Info: d2.png  used on input line 871.
+(pdftex.def)             Requested size: 500.01428pt x 400.0064pt.
 
-Overfull \hbox (56.4358pt too wide) in paragraph at lines 855--856
+Overfull \hbox (56.4358pt too wide) in paragraph at lines 871--872
  [] 
  []
 
 [53 <./d2.png>]
-<sg.png, id=241, 635.37375pt x 569.12625pt>
+<sg.png, id=242, 635.37375pt x 569.12625pt>
 File: sg.png Graphic file (type png)
 <use sg.png>
-Package pdftex.def Info: sg.png  used on input line 864.
-(pdftex.def)             Requested size: 500.02014pt x 350.01491pt.
+Package pdftex.def Info: sg.png  used on input line 880.
+(pdftex.def)             Requested size: 500.02014pt x 400.01828pt.
 
-Overfull \hbox (56.44167pt too wide) in paragraph at lines 864--865
+Overfull \hbox (56.44167pt too wide) in paragraph at lines 880--881
  [] 
  []
 
 [54 <./sg.png>]
-<contactus.png, id=247, 1330.9725pt x 629.35126pt>
+<contactus.png, id=248, 1330.9725pt x 629.35126pt>
 File: contactus.png Graphic file (type png)
 <use contactus.png>
-Package pdftex.def Info: contactus.png  used on input line 873.
-(pdftex.def)             Requested size: 499.98676pt x 349.9951pt.
+Package pdftex.def Info: contactus.png  used on input line 889.
+(pdftex.def)             Requested size: 499.98676pt x 300.0013pt.
 
-Overfull \hbox (56.40828pt too wide) in paragraph at lines 873--874
+Overfull \hbox (56.40828pt too wide) in paragraph at lines 889--890
  [] 
  []
 
 [55 <./contactus.png>]
-<aboutus.png, id=252, 1330.9725pt x 629.35126pt>
+<aboutus.png, id=253, 1330.9725pt x 629.35126pt>
 File: aboutus.png Graphic file (type png)
 <use aboutus.png>
-Package pdftex.def Info: aboutus.png  used on input line 882.
+Package pdftex.def Info: aboutus.png  used on input line 898.
 (pdftex.def)             Requested size: 499.98676pt x 349.9951pt.
 
-Overfull \hbox (56.40828pt too wide) in paragraph at lines 882--883
+Overfull \hbox (56.40828pt too wide) in paragraph at lines 898--899
  [] 
  []
 
 [56 <./aboutus.png>] [57] [58
 
 ]
-Overfull \hbox (20.9967pt too wide) in paragraph at lines 902--903
+Overfull \hbox (20.9967pt too wide) in paragraph at lines 918--919
 []\T1/ppl/m/n/12 [1] https ://openclassrooms.com/fr/courses/626954-creez-votre-
 application-web-avec-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 902--903
+Underfull \hbox (badness 10000) in paragraph at lines 918--919
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 904--905
+Underfull \hbox (badness 10000) in paragraph at lines 920--921
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 906--907
+Underfull \hbox (badness 10000) in paragraph at lines 922--923
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 908--909
+Overfull \hbox (10.05289pt too wide) in paragraph at lines 924--925
+[]\T1/ppl/m/n/12 [4] https ://www.supinfo.com/articles/single/3099-waterfall-mo
+del-modele-cascade 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 924--925
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 910--911
+Underfull \hbox (badness 10000) in paragraph at lines 926--927
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 912--913
+Underfull \hbox (badness 10000) in paragraph at lines 928--929
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 914--915
+Underfull \hbox (badness 10000) in paragraph at lines 930--931
 
  []
 
@@ -1215,9 +1221,9 @@ r/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (60 pages, 5442047 bytes).
+Output written on main.pdf (60 pages, 5430633 bytes).
 PDF statistics:
- 284 PDF objects out of 1000 (max. 8388607)
+ 285 PDF objects out of 1000 (max. 8388607)
  148 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  181 words of extra memory for PDF output out of 10000 (max. 10000000)

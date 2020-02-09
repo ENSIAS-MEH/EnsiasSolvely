@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.7.25)  9 FEB 2020 14:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.7.25)  9 FEB 2020 19:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1173,14 +1173,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 920--921
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 922--923
-
+Overfull \hbox (10.05289pt too wide) in paragraph at lines 922--923
+[]\T1/ppl/m/n/12 [3] https ://www.supinfo.com/articles/single/3099-waterfall-mo
+del-modele-cascade 
  []
 
 
-Overfull \hbox (10.05289pt too wide) in paragraph at lines 924--925
-[]\T1/ppl/m/n/12 [4] https ://www.supinfo.com/articles/single/3099-waterfall-mo
-del-modele-cascade 
+Underfull \hbox (badness 10000) in paragraph at lines 922--923
+
  []
 
 
@@ -1190,16 +1190,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 924--925
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 926--927
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 928--929
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 930--931
 
  []
 
@@ -1221,7 +1211,7 @@ r/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (60 pages, 5430633 bytes).
+Output written on main.pdf (60 pages, 5430600 bytes).
 PDF statistics:
  285 PDF objects out of 1000 (max. 8388607)
  148 compressed objects within 2 object streams

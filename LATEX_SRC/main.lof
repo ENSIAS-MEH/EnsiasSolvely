@@ -1,6 +1,6 @@
 \babel@toc {french}{}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Mod\IeC {\`e}le en cascade [4]}}{12}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Mod\IeC {\`e}le en cascade [3]}}{12}
 \contentsline {figure}{\numberline {1.2}{\ignorespaces Planning}}{13}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Diagramme de cas d'utilisation}}{17}
@@ -15,8 +15,8 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Diagramme de classe}}{30}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Connexion Clients/Serveur [7]}}{35}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Architecture MVC [7]}}{36}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Connexion Clients/Serveur [5]}}{35}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Architecture MVC [5]}}{36}
 \contentsline {figure}{\numberline {4.3}{\ignorespaces Page d'accueil}}{37}
 \contentsline {figure}{\numberline {4.4}{\ignorespaces Fen\IeC {\^e}tre de login}}{38}
 \contentsline {figure}{\numberline {4.5}{\ignorespaces Interface de l'admin}}{39}

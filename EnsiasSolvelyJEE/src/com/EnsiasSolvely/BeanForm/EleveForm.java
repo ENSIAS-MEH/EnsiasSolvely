@@ -18,8 +18,9 @@ public class EleveForm {
 			
 		eleve = EleveDAO.getEleveInformation(login, motdepasse);
 		
-		if(eleve==null) {
+		if(eleve==null || eleve.getChambre().isEmpty()) {
 			settings.setErreur("login","Mot de passe ou login incorrecte");
+			return null;
 		}
 		return eleve;
 	}

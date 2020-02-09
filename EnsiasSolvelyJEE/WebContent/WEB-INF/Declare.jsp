@@ -33,7 +33,7 @@
 							</tr>
 							<tr>
 								<th scope="row">Place</th>
-								<td><input name="lieu"></input></td>
+								<td><input name="lieu" required></input></td>
 							</tr>
 							<tr>
 								<th scope="row">Type</th>
@@ -48,7 +48,7 @@
 							</tr>
 							<tr>
 								<th scope="row">Description</th>
-								<td><input name="description" ></input></td>
+								<td><input name="description" required></input></td>
 							</tr>
 							<tr>
 								<th scope="row">Date demande</th>
